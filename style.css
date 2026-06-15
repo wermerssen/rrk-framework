@@ -91,6 +91,40 @@ footer {
         border: 1px solid #333;
     }
 }
+/* ----------------------------- */
+/* HERO HEADER */
+/* ----------------------------- */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Dark Mode Anpassung */
+@media (prefers-color-scheme: dark) {
+    .subtitle {
+        color: #aaa;
+    }
+}
 
     color: white;
     margin-top: 40px;
