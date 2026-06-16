@@ -125,7 +125,35 @@ footer {
         color: #aaa;
     }
 }
+    
 
     color: white;
     margin-top: 40px;
+}
+/* Top Navigation */
+.topnav {
+    display: flex;
+    gap: 20px;
+    padding: 15px 25px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.topnav a:hover {
+    opacity: 1;
+}
+
+.topnav a.active {
+    border-bottom: 2px solid var(--accent-color);
+    opacity: 1;
 }
