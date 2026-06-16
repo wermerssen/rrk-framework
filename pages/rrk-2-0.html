@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 2.0 – Conceptual Foundation</title>
-    <link rel="stylesheet" href="../style.css?v=999">
-</head>
+    <title>RRK 2.0 – Local Dynamics</title>
+    <link rel="stylesheet" href="../style.css?v=1001">
 
+    <!-- MathJax für LaTeX-Rendering -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+</head>
 
 <body>
 
@@ -21,8 +28,8 @@
     <a href="../index.html" class="logo-link">
         <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
     </a>
-    <h1>RRK 2.0 – Conceptual Foundation</h1>
-    <p class="subtitle">Recursive and relational structure of systems</p>
+    <h1>RRK 2.0 – Local Dynamics</h1>
+    <p class="subtitle">Recursive–relational systems and local attractor structure</p>
 </header>
 
 <main>
@@ -30,51 +37,41 @@
     <section>
         <h2>Overview</h2>
         <p>
-            RRK 2.0 establishes the conceptual core of the Recursive‑Relational Framework.
-            It defines how systems evolve through the interplay of recursive feedback loops
-            and relational coupling between components.
+            RRK 2.0 formalizes the recursive–relational framework at the level of
+            <strong>local dynamics</strong>. It focuses on how systems evolve in
+            state space under fixed parameters, and how local attractors and their
+            neighborhoods are organized.
+        </p>
+        <p>
+            At its core, RRK 2.0 studies a dynamical system
+            \( F : X \to X \) on a state space \(X\), together with a
+            recursive–relational structure that constrains how states can
+            influence each other over time.
         </p>
     </section>
 
     <section>
-        <h2>Recursive Mechanisms</h2>
+        <h2>Recursive–relational structure</h2>
         <p>
-            Recursion describes how a system’s current state influences its next state.
-            RRK 2.0 formalizes this as the fundamental driver of systemic evolution.
+            The recursive–relational aspect of RRK 2.0 is captured by a relation
+            \( R \subseteq X \times X \) that encodes which states are
+            <em>relationally connected</em>. The dynamics are then studied not
+            only in terms of trajectories, but in terms of how they respect or
+            violate this relational structure.
         </p>
-    </section>
-
-    <section>
-        <h2>Relational Coupling</h2>
         <p>
-            Components of a system do not evolve independently. Their interactions form
-            relational structures that shape the system’s behavior and stability.
+            A simple formalization is:
         </p>
-    </section>
-
-    <section>
-        <h2>From Concept to Dynamics</h2>
         <p>
-            RRK 2.0 provides the conceptual foundation for the numerical exploration in RRK 2.1
-            and the analytical structure in RRK 2.2. Together, these layers prepare the transition
-            to the global theory in RRK 3.0.
+            
+
+\[
+                (x, y) \in R
+                \quad \Rightarrow \quad
+                F(x) \sim F(y),
+            \]
+
+
         </p>
-    </section>
-
-</main>
-
-<footer>
-    <p>RRK Framework – Version 2.0</p>
-</footer>
-
-<script>
-    const current = window.location.pathname.split('/').pop();
-    document.querySelectorAll('.topnav a').forEach(link => {
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-</script>
-
-</body>
-</html>
+        <p>
+            where \(\sim\) denotes a notion of dynamical similarity
