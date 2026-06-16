@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 2.2 – Analytical Structure</title>
-    <link rel="stylesheet" href="../style.css?v=999">
+    <title>RRK 2.2 – Attractor Families & Stability Analysis</title>
+    <link rel="stylesheet" href="../style.css?v=1001">
+
+    <!-- MathJax für LaTeX-Rendering -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 </head>
 
 <body>
@@ -13,60 +21,3 @@
     <a href="rrk-2-0.html">RRK 2.0</a>
     <a href="rrk-2-1.html">RRK 2.1</a>
     <a href="rrk-2-2.html">RRK 2.2</a>
-    <a href="rrk-3-0.html">RRK 3.0</a>
-</nav>
-
-<header>
-    <a href="../index.html" class="logo-link">
-        <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
-    </a>
-    <h1>RRK 2.2 – Analytical Structure</h1>
-    <p class="subtitle">Stability and relational structure</p>
-</header>
-
-<main>
-
-    <section>
-        <h2>Overview</h2>
-        <p>
-            RRK 2.2 introduces the analytical layer of the framework.
-            It studies stability, invariants, and structural properties
-            of recursive‑relational systems.
-        </p>
-    </section>
-
-    <section>
-        <h2>Relational Stability</h2>
-        <p>
-            Stability is defined in terms of relational configurations
-            rather than purely local eigenvalues, preparing the shift
-            toward global perspectives in RRK 3.0.
-        </p>
-    </section>
-
-    <section>
-        <h2>Analytical Tools</h2>
-        <p>
-            RRK 2.2 collects analytical techniques that connect
-            numerical observations from RRK 2.1 with the global
-            geometry developed in RRK 3.0.
-        </p>
-    </section>
-
-</main>
-
-<footer>
-    <p>RRK Framework – Version 2.2</p>
-</footer>
-
-<script>
-    const current = window.location.pathname.split('/').pop();
-    document.querySelectorAll('.topnav a').forEach(link => {
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-</script>
-
-</body>
-</html>
