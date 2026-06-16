@@ -1,15 +1,19 @@
 /* -------------------------------------- */
-/* GLOBAL */
+/* ROOT VARIABLES */
 /* -------------------------------------- */
 
 :root {
-    --accent: #F28C28;
     --primary: #1E4B9A;
     --primary-dark: #163a75;
+    --accent: #F28C28;
     --text: #222;
     --bg: #f5f5f5;
     --card-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+
+/* -------------------------------------- */
+/* GLOBAL */
+/* -------------------------------------- */
 
 body {
     font-family: Arial, sans-serif;
@@ -46,139 +50,4 @@ header h1 {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-top: 10px;
-    color: white;
-}
-
-
-/* -------------------------------------- */
-/* NAVIGATION */
-/* -------------------------------------- */
-
-.topnav {
-    display: flex;
-    gap: 25px;
-    padding: 15px 30px;
-    background: #ffffffcc;
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid #ddd;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.topnav a {
-    text-decoration: none;
-    color: var(--primary);
-    font-weight: 500;
-    opacity: 0.85;
-    padding-bottom: 4px;
-}
-
-.topnav a:hover {
-    opacity: 1;
-}
-
-.topnav a.active {
-    border-bottom: 3px solid var(--accent);
-    opacity: 1;
-    font-weight: 600;
-}
-
-/* -------------------------------------- */
-/* CONTENT */
-/* -------------------------------------- */
-
-section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-section h2 {
-    border-left: 4px solid var(--primary);
-    padding-left: 12px;
-    margin-bottom: 20px;
-    font-size: 1.6rem;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    margin: 30px 0;
-    border-radius: 12px;
-    box-shadow: var(--card-shadow);
-}
-
-.card a {
-    color: var(--accent);
-    font-weight: bold;
-}
-
-/* -------------------------------------- */
-/* FOOTER */
-/* -------------------------------------- */
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: var(--primary);
-    color: white;
-    margin-top: 60px;
-    font-size: 0.95rem;
-}
-
-/* -------------------------------------- */
-/* DARK MODE */
-/* -------------------------------------- */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0d0d0d;
-        --text: #e6e6e6;
-        --card-shadow: 0 4px 14px rgba(0,0,0,0.4);
-    }
-
-    body {
-        background: var(--bg);
-        color: var(--text);
-    }
-
-    header {
-        background: linear-gradient(135deg, #111, #0a0a0a);
-        border-bottom: 1px solid #333;
-    }
-
-    .logo {
-        filter: brightness(1.2);
-    }
-
-    .topnav {
-        background: #111a;
-        border-bottom: 1px solid #333;
-    }
-
-    .topnav a {
-        color: #4da3ff;
-    }
-
-    .topnav a.active {
-        border-bottom-color: #82c3ff;
-    }
-
-    section {
-        background: #111;
-        border-radius: 12px;
-        padding: 40px;
-        border: 1px solid #333;
-    }
-
-    .card {
-        background: #111;
-        border: 1px solid #333;
-    }
-
-    footer {
-        background: #111;
-        color: #aaa;
-    }
-}
+    color: white
