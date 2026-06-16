@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 2.0 – Local Dynamics</title>
-    <link rel="stylesheet" href="../style.css?v=1001">
-
-    <!-- MathJax für LaTeX-Rendering -->
-    <script>
-        window.MathJax = {
-            tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
-        };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+    <title>RRK 2.0 – Structural Model</title>
+    <link rel="stylesheet" href="../style.css?v=1002">
 </head>
 
 <body>
+
+<header class="site-header">
+    <img src="../rrk-logo.svg" alt="RRK Logo" class="rrk-logo">
+</header>
 
 <nav class="topnav">
     <a href="../index.html">Home</a>
@@ -24,54 +20,12 @@
     <a href="rrk-3-0.html">RRK 3.0</a>
 </nav>
 
-<header>
-    <a href="../index.html" class="logo-link">
-        <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
-    </a>
-    <h1>RRK 2.0 – Local Dynamics</h1>
-    <p class="subtitle">Recursive–relational systems and local attractor structure</p>
-</header>
-
 <main>
+    <h1>RRK 2.0 – Structural Model</h1>
+    <p>
+        RRK 2.0 definiert die grundlegende Struktur rekursiver Systeme.
+    </p>
+</main>
 
-    <section>
-        <h2>Overview</h2>
-        <p>
-            RRK 2.0 formalizes the recursive–relational framework at the level of
-            <strong>local dynamics</strong>. It focuses on how systems evolve in
-            state space under fixed parameters, and how local attractors and their
-            neighborhoods are organized.
-        </p>
-        <p>
-            At its core, RRK 2.0 studies a dynamical system
-            \( F : X \to X \) on a state space \(X\), together with a
-            recursive–relational structure that constrains how states can
-            influence each other over time.
-        </p>
-    </section>
-
-    <section>
-        <h2>Recursive–relational structure</h2>
-        <p>
-            The recursive–relational aspect of RRK 2.0 is captured by a relation
-            \( R \subseteq X \times X \) that encodes which states are
-            <em>relationally connected</em>. The dynamics are then studied not
-            only in terms of trajectories, but in terms of how they respect or
-            violate this relational structure.
-        </p>
-        <p>
-            A simple formalization is:
-        </p>
-        <p>
-            
-
-\[
-                (x, y) \in R
-                \quad \Rightarrow \quad
-                F(x) \sim F(y),
-            \]
-
-
-        </p>
-        <p>
-            where \(\sim\) denotes a notion of dynamical similarity
+</body>
+</html>
