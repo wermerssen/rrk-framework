@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 3.0 – Global Geometry</title>
+    <title>RRK 3.0 – Global Theory</title>
     <link rel="stylesheet" href="../style.css?v=1001">
 
     <!-- MathJax für LaTeX-Rendering -->
@@ -24,131 +24,74 @@
     <a href="rrk-3-0.html">RRK 3.0</a>
 </nav>
 
-<header>
-    <a href="../index.html" class="logo-link">
-        <!-- RRK-Logo im CERN-Stil: weißes Logo auf blauem Header -->
-        <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
-    </a>
-    <h1>RRK 3.0 – Global Theory</h1>
-    <p class="subtitle">Global attractor geometry and systemic transitions</p>
-</header>
-
 <main>
+    <h1>RRK 3.0 – Global Theory</h1>
 
-    <section>
-        <h2>Overview</h2>
-        <p>
-            RRK 3.0 extends the recursive–relational framework to a global dynamical theory.
-            It describes how entire attractor landscapes reorganize under parameter changes,
-            and how systemic transitions emerge from global rather than local mechanisms.
-        </p>
-        <p>
-            Formally, RRK 3.0 considers a family of dynamical systems
-            \( F_\lambda : X \to X \) with parameter \( \lambda \in \Lambda \),
-            and studies the structure of attractors and their basins across \(\Lambda\).
-        </p>
-    </section>
+    <p>
+        RRK 3.0 bildet die **globale Theorie** des rekursiv‑relationalen 
+        Frameworks.  
+        Während RRK 2.x lokale Mechanismen, Simulation und Stabilität 
+        beschreibt, definiert RRK 3.0 die **globalen Transformationsregeln**, 
+        die für alle rekursiven Systeme gelten.
+    </p>
 
-    <section>
-        <h2>Global attractor geometry</h2>
-        <p>
-            RRK 3.0 introduces the concept of <strong>global attractor geometry</strong>:
-            the structure formed by all attractors \(A_i(\lambda)\), their basins
-            \(B_i(\lambda)\), and the boundaries between them.
-        </p>
-        <p>
-            A minimal representation of the global attractor geometry is given by
-        </p>
-        <p>
-            
+    <h2>1. Globale Rekursion</h2>
+    <p>
+        Die zentrale Gleichung lautet:
+    </p>
 
-\[
-                \mathcal{G}(\lambda)
-                = \big\{ (A_i(\lambda), B_i(\lambda)) \big\}_{i=1}^N,
-            \]
+    <pre>
+X(t+1) = F( X(t), R, A )
+    </pre>
 
+    <p>
+        Dabei sind:
+        <ul>
+            <li><b>X</b> – globaler Systemzustand</li>
+            <li><b>R</b> – relationale Struktur</li>
+            <li><b>A</b> – Drift‑ und Attraktorparameter</li>
+        </ul>
+    </p>
 
-        </p>
-        <p>
-            together with the adjacency relations between basins and their separating
-            manifolds. RRK 3.0 treats this structure as the primary object of analysis,
-            rather than individual trajectories.
-        </p>
-    </section>
+    <h2>2. Transformation Manifold</h2>
+    <p>
+        RRK 3.0 beschreibt die Menge aller möglichen Systemverläufe als 
+        **Transformationsmannigfaltigkeit**:
+    </p>
 
-    <section>
-        <h2>Transition manifolds</h2>
-        <p>
-            A central innovation of RRK 3.0 is the notion of
-            <strong>transition manifolds</strong>:
-            geometric surfaces in parameter space that separate qualitatively distinct
-            global regimes.
-        </p>
-        <p>
-            Informally, a transition manifold \(\mathcal{T}\) is a subset of
-            parameter space such that small perturbations across \(\mathcal{T}\)
-            induce a reconfiguration of the global attractor geometry:
-        </p>
-        <p>
-            
+    <pre>
+T = { X(t) | F rekursiv angewendet }
+    </pre>
 
-\[
-                \lambda \in \mathcal{T}
-                \quad \Rightarrow \quad
-                \mathcal{G}(\lambda^-)\not\simeq \mathcal{G}(\lambda^+),
-            \]
+    <p>
+        Diese Struktur erlaubt Aussagen über:
+        <ul>
+            <li>globale Regime</li>
+            <li>Übergänge zwischen Regimen</li>
+            <li>universelle Drift‑Muster</li>
+            <li>Attraktor‑Geometrien</li>
+        </ul>
+    </p>
 
+    <h2>3. Globale Bifurkationen</h2>
+    <p>
+        RRK 3.0 identifiziert universelle Übergangsformen:
+        <ul>
+            <li>Regime‑Spaltung</li>
+            <li>Regime‑Fusion</li>
+            <li>Drift‑Induzierte Sprünge</li>
+            <li>Attraktor‑Migration</li>
+        </ul>
+    </p>
 
-        </p>
-        <p>
-            where \(\lambda^-\) and \(\lambda^+\) denote parameters on opposite sides
-            of \(\mathcal{T}\). Crossing such a manifold corresponds to a systemic
-            transition.
-        </p>
-    </section>
-
-    <section>
-        <h2>Global stability balance</h2>
-        <p>
-            Instead of local eigenvalues, RRK 3.0 defines stability in terms of the
-            <strong>global stability balance</strong>: the relative strength of attractors
-            and the geometry of their basins.
-        </p>
-        <p>
-            Let \(A_i\) denote attractors with basin measures \(\mu(B_i)\) and
-            stability weights \(w_i\). The global stability balance is defined as
-        </p>
-        <p>
-            
-
-\[
-                S_{\text{global}}(\lambda)
-                = \frac{\sum_{i} w_i(\lambda)\,\mu\big(B_i(\lambda)\big)}
-                       {\sum_{i} \mu\big(B_i(\lambda)\big)}.
-            \]
-
-
-        </p>
-        <p>
-            Changes in \(S_{\text{global}}\) across parameter space indicate shifts
-            in the dominance of attractors and thus in the systemic regime.
-        </p>
-    </section>
+    <h2>4. Interpretation</h2>
+    <p>
+        Die globale Theorie zeigt, dass rekursive Systeme nicht nur durch 
+        lokale Dynamik bestimmt werden, sondern durch die **Form ihrer 
+        globalen Transformationslandschaft**.
+    </p>
 
 </main>
-
-<footer>
-    <p>RRK Framework – Version 3.0 · Conceptual draft</p>
-</footer>
-
-<script>
-    const current = window.location.pathname.split('/').pop();
-    document.querySelectorAll('.topnav a').forEach(link => {
-        if (link.getAttribute('href').includes(current)) {
-            link.classList.add('active');
-        }
-    });
-</script>
 
 </body>
 </html>
