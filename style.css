@@ -1,53 +1,177 @@
-/* -------------------------------------- */
-/* ROOT VARIABLES */
-/* -------------------------------------- */
+/* -------------------------------------------------- */
+/* CERN / Scientific Framework Style                  */
+/* Clean, minimal, typographic, high‑contrast         */
+/* -------------------------------------------------- */
 
 :root {
-    --primary: #1E4B9A;
-    --primary-dark: #163a75;
-    --accent: #F28C28;
+    --primary: #003366;        /* CERN‑Blau */
+    --primary-light: #1a4d80;
+    --accent: #e67e22;         /* dezenter Akzent */
     --text: #222;
-    --bg: #f5f5f5;
-    --card-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    --bg: #ffffff;
+    --bg-alt: #f5f7fa;
+    --border: #d0d4d9;
+    --radius: 6px;
 }
 
-/* -------------------------------------- */
-/* GLOBAL */
-/* -------------------------------------- */
+/* -------------------------------------------------- */
+/* GLOBAL                                              */
+/* -------------------------------------------------- */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.65;
+    font-size: 17px;
 }
 
-/* -------------------------------------- */
-/* HEADER */
-/* -------------------------------------- */
+/* -------------------------------------------------- */
+/* HEADER                                              */
+/* -------------------------------------------------- */
 
 header {
     text-align: center;
-    padding: 70px 20px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 60px 20px;
+    background: var(--primary);
     color: white;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-bottom: 4px solid var(--primary-light);
 }
 
 .logo {
-    width: 90px;
-    margin-bottom: 25px;
+    width: 85px;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 2.4rem;
     margin: 0;
+    font-size: 2.2rem;
     font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
     margin-top: 10px;
-    color: white
+    font-size: 1.15rem;
+    opacity: 0.9;
+    color: white;
+}
+
+/* -------------------------------------------------- */
+/* NAVIGATION                                          */
+/* -------------------------------------------------- */
+
+.topnav {
+    display: flex;
+    gap: 25px;
+    padding: 14px 30px;
+    background: var(--bg-alt);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+.topnav a.active {
+    border-bottom: 3px solid var(--accent);
+    font-weight: 600;
+}
+
+/* -------------------------------------------------- */
+/* CONTENT                                             */
+/* -------------------------------------------------- */
+
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    border-left: 4px solid var(--primary);
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------- */
+/* CARD ELEMENTS                                       */
+/* -------------------------------------------------- */
+
+.card {
+    background: var(--bg-alt);
+    padding: 25px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin: 30px 0;
+}
+
+.card a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER                                              */
+/* -------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--primary);
+    color: white;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
+
+/* -------------------------------------------------- */
+/* DARK MODE                                           */
+/* -------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #0d0d0d;
+        --bg-alt: #1a1a1a;
+        --text: #e6e6e6;
+        --border: #333;
+    }
+
+    body {
+        background: var(--bg);
+        color: var(--text);
+    }
+
+    header {
+        background: #0a0a0a;
+        border-bottom-color: #222;
+    }
+
+    .topnav {
+        background: #111;
+        border-bottom-color: #333;
+    }
+
+    .topnav a {
+        color: #4da3ff;
+    }
+
+    section {
+        background: transparent;
+    }
+
+    .card {
+        background: #111;
+        border
