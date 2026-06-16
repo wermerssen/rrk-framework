@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK Framework – Recursive‑Relational System Dynamics</title>
-    <link rel="stylesheet" href="style.css">
+    <title>RRK Framework – Overview</title>
+    <link rel="stylesheet" href="style.css?v=1001">
+
+    <!-- MathJax für LaTeX-Rendering -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 </head>
+
 <body>
 
-<!-- Navigation -->
 <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="pages/rrk-2-0.html">RRK 2.0</a>
@@ -16,47 +24,42 @@
     <a href="pages/rrk-3-0.html">RRK 3.0</a>
 </nav>
 
-<!-- Header -->
 <header>
     <a href="index.html" class="logo-link">
         <img src="rrk-logo.svg" alt="RRK Logo" class="logo">
     </a>
-    <h1>RRK – Recursive‑Relational Framework</h1>
-    <p class="subtitle">A unified theory of systemic dynamics</p>
+    <h1>RRK Framework</h1>
+    <p class="subtitle">Recursive–Relational Knowledge · A multi‑level dynamical theory</p>
 </header>
 
-<!-- Hero Section -->
-<section class="hero">
-    <h2>Understanding Systems Through Recursion and Relation</h2>
-    <p>
-        RRK provides a multi‑layered scientific framework for analyzing how systems evolve,
-        stabilize, and transition through recursive feedback and relational coupling.
-    </p>
-</section>
-
-<!-- Main Content -->
 <main>
 
     <section>
-        <h2>What is RRK?</h2>
+        <h2>What is the RRK Framework?</h2>
         <p>
-            The Recursive‑Relational Framework (RRK) is a unified theory of system dynamics.
-            It describes how systems evolve through the interplay of recursive feedback and
-            relational coupling. RRK provides a conceptual, numerical, analytical, and global
-            perspective on systemic change.
+            The RRK Framework is a multi‑level theory of dynamical systems based on
+            <strong>recursive–relational structure</strong>.  
+            It describes how systems evolve locally, how attractors form structured
+            families, and how entire attractor landscapes reorganize under parameter
+            changes.
+        </p>
+        <p>
+            Formally, an RRK system is represented as:
+        </p>
+        <p>
+            
+
+\[
+                \mathcal{R} = (X, F, R, \Theta, \Lambda),
+            \]
+
+
+        </p>
+        <p>
+            where \(X\) is the state space, \(F\) the update rule,
+            \(R\) the relational structure, \(\Theta\) operational parameters,
+            and \(\Lambda\) the parameter space for global transitions.
         </p>
     </section>
 
     <section>
-        <h2>RRK Versions</h2>
-        <ul>
-            <li><a href="pages/rrk-2-0.html"><strong>RRK 2.0</strong></a> – Conceptual and structural foundation</li>
-            <li><a href="pages/rrk-2-1.html"><strong>RRK 2.1</strong></a> – Numerical dynamics and simulation</li>
-            <li><a href="pages/rrk-2-2.html"><strong>RRK 2.2</strong></a> – Analytical stability theory</li>
-            <li><a href="pages/rrk-3-0.html"><strong>RRK 3.0</strong></a> – Global attractor geometry</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Research Program</h2>
-        <p>
