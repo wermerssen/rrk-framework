@@ -35,6 +35,14 @@
 
     <a href="../index.html">← Back to Home</a>
 </section>
+<script>
+    const current = window.location.pathname.split('/').pop();
+    document.querySelectorAll('.topnav a').forEach(link => {
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
+    });
+</script>
 
 </body>
 </html>
