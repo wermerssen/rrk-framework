@@ -1,9 +1,17 @@
+/* ----------------------------- */
+/* GLOBAL */
+/* ----------------------------- */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f5f5f5;
     color: #222;
 }
+
+/* ----------------------------- */
+/* HEADER */
+/* ----------------------------- */
 
 header {
     text-align: center;
@@ -20,7 +28,12 @@ header {
 .subtitle {
     font-size: 1.2em;
     opacity: 0.9;
+    color: white;
 }
+
+/* ----------------------------- */
+/* NAVIGATION */
+/* ----------------------------- */
 
 nav {
     background: #fff;
@@ -35,6 +48,10 @@ nav a {
     color: #1E4B9A;
     font-weight: bold;
 }
+
+/* ----------------------------- */
+/* CONTENT */
+/* ----------------------------- */
 
 section {
     padding: 40px 20px;
@@ -51,109 +68,4 @@ section {
 }
 
 .card a {
-    color: #F28C28;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1E4B9A;
-    /* -------------------------------------- */
-/*  AUTOMATISCHER DARK MODE (SYSTEMBASIERT) */
-/* -------------------------------------- */
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #0d0d0d;
-        color: #e6e6e6;
-    }
-
-    header {
-        background-color: #111;
-        border-bottom: 1px solid #333;
-    }
-
-    a {
-        color: #4da3ff;
-    }
-
-    a:hover {
-        color: #82c3ff;
-    }
-
-    .logo {
-        filter: brightness(1.2);
-    }
-
-    section {
-        background-color: #111;
-        border: 1px solid #333;
-    }
-}
-/* ----------------------------- */
-/* HERO HEADER */
-/* ----------------------------- */
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    margin-bottom: 40px;
-}
-
-.hero-logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.hero h1 {
-    font-size: 2.4rem;
-    margin: 0;
-    font-weight: 600;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #555;
-}
-
-/* Dark Mode Anpassung */
-@media (prefers-color-scheme: dark) {
-    .subtitle {
-        color: #aaa;
-    }
-}
-    
-
-    color: white;
-    margin-top: 40px;
-}
-/* Top Navigation */
-.topnav {
-    display: flex;
-    gap: 20px;
-    padding: 15px 25px;
-    background: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-color);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.topnav a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    opacity: 0.85;
-}
-
-.topnav a:hover {
-    opacity: 1;
-}
-
-.topnav a.active {
-    border-bottom: 2px solid var(--accent-color);
-    opacity: 1;
-}
+    color: #F
