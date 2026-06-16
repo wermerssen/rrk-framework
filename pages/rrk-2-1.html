@@ -2,39 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 2.1 – Numerical Dynamics Model</title>
+    <title>RRK 2.1 – Numerical Dynamics</title>
     <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
+
 <nav class="topnav">
     <a href="../index.html">Home</a>
     <a href="rrk-2-0.html">RRK 2.0</a>
-    <a href="rrk-2-1.html" class="active">RRK 2.1</a>
+    <a href="rrk-2-1.html">RRK 2.1</a>
     <a href="rrk-2-2.html">RRK 2.2</a>
     <a href="rrk-3-0.html">RRK 3.0</a>
 </nav>
 
-
 <header>
-    <h1>RRK 2.1 – Numerical Dynamics Model</h1>
+    <a href="../index.html" class="logo-link">
+        <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
+    </a>
+    <h1>RRK 2.1 – Numerical Dynamics</h1>
+    <p class="subtitle">Simulation of recursive‑relational systems</p>
 </header>
 
-<section>
-    <p>
-        RRK 2.1 implements the conceptual theory of RRK 2.0 as a nonlinear
-        numerical simulation model. It defines the system variables, coupling
-        functions, drift terms, and saturation dynamics.
-    </p>
+<main>
 
-    <p>
-        The model allows exploration of attractor formation, bifurcations,
-        oscillatory regimes, and collapse scenarios through parameter sweeps
-        and time‑series analysis.
-    </p>
+    <section>
+        <h2>Overview</h2>
+        <p>
+            RRK 2.1 develops the numerical layer of the recursive‑relational framework.
+            It focuses on simulation methods for systems defined by recursive feedback
+            and relational coupling.
+        </p>
+    </section>
 
-    <a href="../index.html">← Back to Home</a>
-</section>
+    <section>
+        <h2>Discrete‑Time Dynamics</h2>
+        <p>
+            Systems are represented as iterated maps with relational dependencies.
+            Numerical exploration reveals attractors, cycles, and transient regimes.
+        </p>
+    </section>
+
+    <section>
+        <h2>Parameter Exploration</h2>
+        <p>
+            RRK 2.1 emphasizes systematic parameter scans to uncover qualitative
+            changes in system behavior and to prepare the ground for RRK 3.0.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>RRK Framework – Version 2.1</p>
+</footer>
+
 <script>
     const current = window.location.pathname.split('/').pop();
     document.querySelectorAll('.topnav a').forEach(link => {
