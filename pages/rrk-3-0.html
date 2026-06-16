@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>RRK 3.0 – Global Geometry</title>
-    <link rel="stylesheet" href="../style.css?v=999">
+    <link rel="stylesheet" href="../style.css?v=1001">
+
+    <!-- MathJax für LaTeX-Rendering -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)'], ['$', '$']] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +26,7 @@
 
 <header>
     <a href="../index.html" class="logo-link">
+        <!-- RRK-Logo im CERN-Stil: weißes Logo auf blauem Header -->
         <img src="../rrk-logo.svg" alt="RRK Logo" class="logo">
     </a>
     <h1>RRK 3.0 – Global Theory</h1>
@@ -29,42 +38,107 @@
     <section>
         <h2>Overview</h2>
         <p>
-            RRK 3.0 extends the recursive‑relational framework to a global dynamical theory. 
-            It describes how entire attractor landscapes reorganize under parameter changes, 
+            RRK 3.0 extends the recursive–relational framework to a global dynamical theory.
+            It describes how entire attractor landscapes reorganize under parameter changes,
             and how systemic transitions emerge from global rather than local mechanisms.
         </p>
-    </section>
-
-    <section>
-        <h2>Global Attractor Geometry</h2>
         <p>
-            RRK 3.0 introduces the concept of <strong>global attractor geometry</strong>: 
-            the structure formed by all attractors, their basins, and the boundaries between them.
+            Formally, RRK 3.0 considers a family of dynamical systems
+            \( F_\lambda : X \to X \) with parameter \( \lambda \in \Lambda \),
+            and studies the structure of attractors and their basins across \(\Lambda\).
         </p>
     </section>
 
     <section>
-        <h2>Transition Manifolds</h2>
+        <h2>Global attractor geometry</h2>
         <p>
-            A central innovation of RRK 3.0 is the notion of <strong>transition manifolds</strong> — 
-            geometric surfaces that separate stable regimes. Crossing such a manifold corresponds 
-            to a systemic transition.
+            RRK 3.0 introduces the concept of <strong>global attractor geometry</strong>:
+            the structure formed by all attractors \(A_i(\lambda)\), their basins
+            \(B_i(\lambda)\), and the boundaries between them.
+        </p>
+        <p>
+            A minimal representation of the global attractor geometry is given by
+        </p>
+        <p>
+            
+
+\[
+                \mathcal{G}(\lambda)
+                = \big\{ (A_i(\lambda), B_i(\lambda)) \big\}_{i=1}^N,
+            \]
+
+
+        </p>
+        <p>
+            together with the adjacency relations between basins and their separating
+            manifolds. RRK 3.0 treats this structure as the primary object of analysis,
+            rather than individual trajectories.
         </p>
     </section>
 
     <section>
-        <h2>Global Stability Balance</h2>
+        <h2>Transition manifolds</h2>
         <p>
-            Instead of local eigenvalues, RRK 3.0 defines stability in terms of the 
-            <strong>global stability balance</strong>: the relative strength of attractors 
+            A central innovation of RRK 3.0 is the notion of
+            <strong>transition manifolds</strong>:
+            geometric surfaces in parameter space that separate qualitatively distinct
+            global regimes.
+        </p>
+        <p>
+            Informally, a transition manifold \(\mathcal{T}\) is a subset of
+            parameter space such that small perturbations across \(\mathcal{T}\)
+            induce a reconfiguration of the global attractor geometry:
+        </p>
+        <p>
+            
+
+\[
+                \lambda \in \mathcal{T}
+                \quad \Rightarrow \quad
+                \mathcal{G}(\lambda^-)\not\simeq \mathcal{G}(\lambda^+),
+            \]
+
+
+        </p>
+        <p>
+            where \(\lambda^-\) and \(\lambda^+\) denote parameters on opposite sides
+            of \(\mathcal{T}\). Crossing such a manifold corresponds to a systemic
+            transition.
+        </p>
+    </section>
+
+    <section>
+        <h2>Global stability balance</h2>
+        <p>
+            Instead of local eigenvalues, RRK 3.0 defines stability in terms of the
+            <strong>global stability balance</strong>: the relative strength of attractors
             and the geometry of their basins.
+        </p>
+        <p>
+            Let \(A_i\) denote attractors with basin measures \(\mu(B_i)\) and
+            stability weights \(w_i\). The global stability balance is defined as
+        </p>
+        <p>
+            
+
+\[
+                S_{\text{global}}(\lambda)
+                = \frac{\sum_{i} w_i(\lambda)\,\mu\big(B_i(\lambda)\big)}
+                       {\sum_{i} \mu\big(B_i(\lambda)\big)}.
+            \]
+
+
+        </p>
+        <p>
+            Changes in \(S_{\text{global}}\) across parameter space indicate shifts
+            in the dominance of attractors and thus in the systemic regime.
         </p>
     </section>
 
 </main>
 
 <footer>
-    <p>RRK Framework – Version 3.0</p>
+    <p>RRK Framework – Version 3.0 · Conceptual draft</p>
 </footer>
 
 <script>
