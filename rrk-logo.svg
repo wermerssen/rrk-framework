@@ -11,7 +11,8 @@
   </defs>
 
   <!-- Dunkler Hintergrund (optional, für Website kannst du den entfernen) -->
-  <rect x="0" y="0" width="240" height="240" fill="#0b1b3b"/>
+  <rect x="0" y="0" width="240" height="240" fill="none"/>
+
 
   <!-- Kreis mit Öffnung rechts -->
   <path class="stroke"
