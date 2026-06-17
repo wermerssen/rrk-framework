@@ -101,6 +101,7 @@
     }
   </style>
 
+  <!-- FIXED MATHJAX BLOCK -->
   <script>
     window.MathJax = {
       tex: {
@@ -141,7 +142,7 @@
     <section class="abstract">
       <h2>Abstract</h2>
       <p>
-        RRK&nbsp;2.0 definiert rekursive Systeme als Strukturen, die ihre eigenen
+        RRK 2.0 definiert rekursive Systeme als Strukturen, die ihre eigenen
         Zustände durch interne Operatoren erzeugen. Ein System ist nicht nur
         „betroffen“ von Regeln, sondern erzeugt seine eigene Dynamik durch
         wiederholte Anwendung eines Rekursionsoperators. Dies bildet die Grundlage
@@ -153,7 +154,7 @@
       <h2>1. Motivation</h2>
       <p>
         Klassische Systemtheorie trennt System und Umwelt, Regeln und Zustände.
-        RRK&nbsp;2.0 setzt an einem anderen Punkt an:
+        RRK 2.0 setzt an einem anderen Punkt an:
       </p>
       <p><strong>Ein System ist das, was sich selbst rekursiv erzeugt.</strong></p>
       <p>
@@ -165,6 +166,7 @@
     <section class="section-box">
       <h2>2. Definition</h2>
       <p>Ein rekursives System besteht aus:</p>
+
       <p>\
 
 \[ S_t \quad \text{(Zustand zur Zeit } t) \\]
@@ -175,12 +177,14 @@
 \[ R \quad \text{(Rekursionsoperator)} \\]
 
 </p>
+
       <p>Die Dynamik ist gegeben durch:</p>
       <p>\
 
 \[ S_{t+1} = R(S_t) \\]
 
 </p>
+
       <p>
         Rekursion bedeutet: Der nächste Zustand entsteht durch Anwendung eines
         internen Operators auf den aktuellen Zustand.
@@ -191,12 +195,14 @@
       <h2>3. Formale Struktur</h2>
       <p><strong>(1) Zustandsraum:</strong> \\( S \in \mathcal{S} \\)</p>
       <p><strong>(2) Operator:</strong> \\( R: \mathcal{S} \rightarrow \mathcal{S} \\)</p>
+
       <p><strong>(3) Rekursionskette:</strong></p>
       <p>\
 
 \[ S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots \\]
 
 </p>
+
       <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst.</p>
     </section>
 
@@ -218,7 +224,7 @@
     <section class="section-box">
       <h2>6. Übergang zu RRK 2.1</h2>
       <p>
-        RRK&nbsp;2.0 definiert rekursive Systeme. RRK&nbsp;2.1 beschreibt, wie diese
+        RRK 2.0 definiert rekursive Systeme. RRK 2.1 beschreibt, wie diese
         Systeme sich verändern, ohne ihre Funktionsfähigkeit zu verlieren:
         Drift &amp; Stabilisierung.
       </p>
