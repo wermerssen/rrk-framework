@@ -4,6 +4,9 @@
   --bg: #FAFAFA;
   --accent: #EAEAEA;
   --text: #222222;
+
+  /* RRK-spezifische Ergänzung */
+  --rrk-blue: #002b5c;
 }
 
 body {
@@ -14,10 +17,11 @@ body {
   color: var(--text);
 }
 
+/* HEADER + NAVIGATION */
 header {
   position: sticky;
   top: 0;
-  background: #ffffff;
+  background: var(--rrk-blue); /* Logo sichtbar machen */
   border-bottom: 1px solid var(--accent);
   z-index: 100;
 }
@@ -31,26 +35,32 @@ header {
   gap: 1rem;
 }
 
+/* Logo sichtbar & präsent */
 .nav img {
-  height: 32px;
+  height: 40px;
+  margin-right: 8px;
+  display: block;
 }
 
+/* Navigation */
 .nav a {
   text-decoration: none;
-  color: var(--secondary);
+  color: #ffffff; /* Weiß auf Blau */
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 .nav a:hover {
-  background: var(--accent);
+  background: rgba(255,255,255,0.15);
 }
 
 .nav a.active {
-  background: var(--primary);
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--rrk-blue);
 }
 
+/* MAIN CONTENT */
 main {
   max-width: 960px;
   margin: 2rem auto;
@@ -62,6 +72,7 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+/* Content Boxes */
 .abstract, .section-box {
   background: #ffffff;
   border: 1px solid var(--accent);
@@ -76,6 +87,7 @@ h1 {
   border-color: #dfe5ff;
 }
 
+/* FOOTER */
 .footer-nav {
   margin-top: 3rem;
   padding-top: 1.5rem;
