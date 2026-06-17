@@ -11,15 +11,15 @@
     </style>
   </defs>
 
-  <!-- Halbkreis oben (leicht nach vorne gezogen, moderner Radius) -->
+  <!-- Halbkreis oben -->
   <path class="stroke"
         d="M 70 120
            A 50 50 0 0 1 170 120" />
 
-  <!-- Horizontale Linie (leicht verlängert, optisch ruhiger) -->
+  <!-- Horizontale Linie -->
   <line x1="40" y1="120" x2="200" y2="120" class="stroke"/>
 
-  <!-- Raute (leicht gedreht, moderner, präziser) -->
+  <!-- Raute -->
   <path class="thin"
         d="M 120 105
            L 135 120
@@ -27,11 +27,11 @@
            L 105 120
            Z" />
 
-  <!-- Pfeil (modernere, längere, elegantere Spitze) -->
+  <!-- Pfeilspitze als Outline (modern, offen, technisch) -->
   <path class="stroke"
         d="M 175 120
-           L 150 108
+           L 155 110
            M 175 120
-           L 150 132" />
+           L 155 130" />
 
 </svg>
