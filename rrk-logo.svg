@@ -18,8 +18,8 @@
   <!-- Raute -->
   <path class="thin" d="M120 105 L135 120 L120 135 L105 120 Z" />
 
-  <!-- Pfeilspitze mit offenem Rahmen -->
-  <line x1="185" y1="120" x2="160" y2="108" class="stroke"/>
-  <line x1="185" y1="120" x2="160" y2="132" class="stroke"/>
-  <line x1="160" y1="108" x2="160" y2="132" class="thin"/>
+  <!-- Asymmetrische, offene Pfeilspitze -->
+  <line x1="185" y1="120" x2="158" y2="106" class="stroke"/>
+  <line x1="185" y1="120" x2="162" y2="134" class="stroke"/>
+  <line x1="158" y1="106" x2="162" y2="134" class="thin"/>
 </svg>
