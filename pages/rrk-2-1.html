@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>RRK 2.1 – Drift & Stabilisierung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
+
+\[', '\\]
+
+']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0.html">RRK 2.0</a>
+    <a href="rrk-2-1.html" class="active">RRK 2.1</a>
+    <a href="rrk-2-2.html">RRK 2.2</a>
+    <a href="rrk-3-0.html">RRK 3.0</a>
+    <a href="rrk-4-0.html">RRK 4.0</a>
+    <a href="rrk-4-1.html">RRK 4.1</a>
+    <a href="rrk-4-2.html">RRK 4.2</a>
+    <a href="rrk-4-3.html">RRK 4.3</a>
+    <a href="rrk-4-4.html">RRK 4.4</a>
+    <a href="rrk-5-0.html">RRK 5.0</a>
+  </nav>
+</header>
+
+<main>
+  <h1>RRK 2.1 – Drift & Stabilisierung</h1>
+  <p><em>Wie rekursive Systeme sich verändern, ohne zu zerfallen</em></p>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 2.1 beschreibt, wie rekursive Systeme trotz ständiger Veränderung
+      stabil bleiben. Drift entsteht durch minimale Abweichungen in der
+      Rekursion, Stabilisierung durch interne Korrekturmechanismen.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>1. Drift</h2>
+    <p>
+      Drift bezeichnet die systematische Verschiebung des Zustands durch
+      wiederholte Rekursion:
+    </p>
+    <p>\
+
+\[ S_{t+1} = R(S_t) + \epsilon_t \\]
+
+</p>
+    <p>
+      Kleine Fehler \\( \epsilon_t \\) akkumulieren sich und erzeugen
+      langfristige Veränderung.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>2. Stabilisierung</h2>
+    <p>
+      Systeme stabilisieren sich durch interne Gegenkräfte:
+    </p>
+    <p>\
+
+\[ S_{t+1} = R(S_t) - K(S_t - S^\*) \\]
+
+</p>
+    <p>
+      Dabei ist \\( S^\* \\) ein Attraktor oder Sollwert.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>3. Drift-Stabilitäts-Balance</h2>
+    <p>
+      Systeme bleiben funktionsfähig, wenn Drift und Stabilisierung im
+      Gleichgewicht stehen.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>4. Übergang zu RRK 2.2</h2>
+    <p>
+      RRK 2.2 untersucht, wie Attraktoren entstehen und wie Systeme divergieren.
+    </p>
+    <p><a href="rrk-2-2.html">Weiter zu RRK 2.2</a></p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Zur Übersicht</a></p>
+  </div>
+</main>
+</body>
+</html>
