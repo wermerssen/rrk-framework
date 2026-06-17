@@ -7,7 +7,6 @@
     <style>
       .stroke { stroke:#ffffff; stroke-width:10; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .thin   { stroke:#ffffff; stroke-width:8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-      .fill   { fill:#ffffff; }
     </style>
   </defs>
 
@@ -27,7 +26,7 @@
            L 105 120
            Z" />
 
-  <!-- Pfeilspitze als echte Outline (offen, modern, NICHT füllbar) -->
+  <!-- Moderne, offene Pfeilspitze (niemals füllbar) -->
   <line x1="175" y1="120" x2="155" y2="108" class="stroke"/>
   <line x1="175" y1="120" x2="155" y2="132" class="stroke"/>
 
