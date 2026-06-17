@@ -1,0 +1,63 @@
+<h2>Definition</h2>
+<p>
+    Ein System ist meta‑stabil, wenn es:
+</p>
+<ul>
+    <li>seine eigenen Stabilitätsbedingungen rekursiv beobachten kann,</li>
+    <li>Stabilität als veränderbare Größe behandelt,</li>
+    <li>zwischen mehreren Stabilitätsniveaus wechseln kann,</li>
+    <li>und diese Wechsel selbst wieder stabilisieren kann.</li>
+</ul>
+
+<h2>Formale Struktur</h2>
+<p>
+    In RRK 4.0 wurde der Meta‑Operator \( \Omega \) eingeführt, der Muster zweiter
+    Ordnung erzeugt. RRK 4.1 erweitert diesen Operator um eine Stabilitätsdimension
+    \( S \):
+</p>
+<p>
+    \[
+    \Omega_S(X) = \Omega(X) \times S(X)
+    \]
+</p>
+<p>
+    Dabei beschreibt \( S(X) \) die Stabilität eines Musters \( X \) über Zeit,
+    Variation und Kontext.
+</p>
+
+<h2>Beispiele</h2>
+<h3>1. Biologische Systeme</h3>
+<p>
+    Evolutionäre Mechanismen stabilisieren nicht nur Organismen, sondern auch die
+    Stabilität der Selektionsmechanismen selbst.
+</p>
+
+<h3>2. Soziale Systeme</h3>
+<p>
+    Institutionen stabilisieren nicht nur Verhalten, sondern auch die Stabilität
+    der Regeln, die Verhalten stabilisieren.
+</p>
+
+<h3>3. KI‑Systeme</h3>
+<p>
+    Meta‑Learning‑Algorithmen stabilisieren nicht nur Modelle, sondern auch die
+    Stabilität der Lernraten, Regularisierungen und Optimierungsstrategien.
+</p>
+
+<h2>Konsequenzen</h2>
+<p>
+    Meta‑Stabilität führt zu:
+</p>
+<ul>
+    <li>höherer Anpassungsfähigkeit,</li>
+    <li>robusteren Attraktoren,</li>
+    <li>größerer Resilienz gegenüber Störungen,</li>
+    <li>und der Fähigkeit, Stabilität selbst als Ressource zu nutzen.</li>
+</ul>
+
+<h2>Ausblick auf RRK 4.2</h2>
+<p>
+    RRK 4.2 wird die <strong>Topologie der Meta‑Attraktoren</strong> untersuchen und
+    beschreiben, wie Systeme zwischen verschiedenen Meta‑Stabilitätsräumen
+    navigieren.
+</p>
