@@ -4,102 +4,21 @@
   <meta charset="UTF-8">
   <title>RRK Framework – Übersicht</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 
-  <style>
-    :root {
-      --primary: #2A6BF2;
-      --secondary: #1A1A1A;
-      --bg: #FAFAFA;
-      --accent: #EAEAEA;
-      --text: #222222;
-    }
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
+\[', '\\]
 
-    header {
-      position: sticky;
-      top: 0;
-      background: #ffffff;
-      border-bottom: 1px solid var(--accent);
-      z-index: 100;
-    }
-
-    .nav {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0.75rem 1rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    .nav img {
-      height: 32px;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: var(--secondary);
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-    }
-
-    .nav a:hover {
-      background: var(--accent);
-    }
-
-    .nav a.active {
-      background: var(--primary);
-      color: #ffffff;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid var(--accent);
-      border-radius: 8px;
-      padding: 1.25rem 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.3rem;
-    }
-
-    .card a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-  </style>
+']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 
 <body>
@@ -107,5 +26,48 @@
     <nav class="nav">
       <img src="rrk-logo.svg" alt="RRK Logo">
       <a href="index.html" class="active">Home</a>
-      <a href="rrk-2-0.html">RRK 2.0</a>
-      <a href="rrk-2-1.html">RRK 2.1</a>
+      <a href="pages/rrk-2-0.html">RRK 2.0</a>
+      <a href="pages/rrk-2-1.html">RRK 2.1</a>
+      <a href="pages/rrk-2-2.html">RRK 2.2</a>
+      <a href="pages/rrk-3-0.html">RRK 3.0</a>
+      <a href="pages/rrk-4-0.html">RRK 4.0</a>
+      <a href="pages/rrk-4-1.html">RRK 4.1</a>
+      <a href="pages/rrk-4-2.html">RRK 4.2</a>
+      <a href="pages/rrk-4-3.html">RRK 4.3</a>
+      <a href="pages/rrk-4-4.html">RRK 4.4</a>
+      <a href="pages/rrk-5-0.html">RRK 5.0</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>RRK Framework</h1>
+    <p><em>Ein universelles, mehrstufiges Modell rekursiver Systemdynamik.</em></p>
+
+    <section class="abstract">
+      <h2>Überblick</h2>
+      <p>
+        Das RRK‑Framework beschreibt rekursive Systeme, ihre Transformationen,
+        Stabilitätsmechanismen und globalen Dynamiken. Es verbindet Konzepte aus
+        Mathematik, Systemtheorie, KI, Biologie und Komplexitätsforschung.
+      </p>
+    </section>
+
+    <section class="section-box">
+      <h2>Navigation</h2>
+      <p>Die einzelnen Ebenen:</p>
+      <ul>
+        <li><a href="pages/rrk-2-0.html">RRK 2.0 – Rekursion & Selbstreferenz</a></li>
+        <li><a href="pages/rrk-2-1.html">RRK 2.1 – Drift & Stabilisierung</a></li>
+        <li><a href="pages/rrk-2-2.html">RRK 2.2 – Attraktoren & Divergenz</a></li>
+        <li><a href="pages/rrk-3-0.html">RRK 3.0 – Transformationen</a></li>
+        <li><a href="pages/rrk-4-0.html">RRK 4.0 – Meta‑Dynamik</a></li>
+        <li><a href="pages/rrk-4-1.html">RRK 4.1 – Stabilitätsräume</a></li>
+        <li><a href="pages/rrk-4-2.html">RRK 4.2 – Systemische Drift</a></li>
+        <li><a href="pages/rrk-4-3.html">RRK 4.3 – Rekursive Transformation</a></li>
+        <li><a href="pages/rrk-4-4.html">RRK 4.4 – Globale Dynamik</a></li>
+        <li><a href="pages/rrk-5-0.html">RRK 5.0 – Universelle Struktur</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
