@@ -1,48 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>RRK 2.0 – Structural Model</title>
-    <link rel="stylesheet" href="../style.css?v=1002">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRK 2.0</title>
+
+    <link rel="stylesheet" href="/rrk-framework/style.css">
+
+    <script>
+        MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+        };
+    </script>
+    <script id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
 
 <body>
 
 <header class="site-header">
-    <img src="../rrk-logo.svg" alt="RRK Logo" class="rrk-logo">
+    <div class="header-content">
+        <img src="/rrk-framework/rrk-logo.svg" alt="RRK Logo" class="rrk-logo">
+        <div class="header-title">
+            <h1>RRK Framework</h1>
+            <p class="subtitle">Recursive‑Relational Knowledge</p>
+        </div>
+    </div>
+
+    <nav class="site-nav">
+        <a href="/rrk-framework/index.html">Home</a>
+        <a href="/rrk-framework/pages/rrk-2.0.html" class="active">RRK 2.0</a>
+        <a href="/rrk-framework/pages/rrk-2.1.html">RRK 2.1</a>
+        <a href="/rrk-framework/pages/rrk-2.2.html">RRK 2.2</a>
+        <a href="/rrk-framework/pages/rrk-3.0.html">RRK 3.0</a>
+        <a href="/rrk-framework/pages/rrk-4.0.html">RRK 4.0</a>
+    </nav>
 </header>
 
-<nav class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="rrk-2-0.html">RRK 2.0</a>
-    <a href="rrk-2-1.html">RRK 2.1</a>
-    <a href="rrk-2-2.html">RRK 2.2</a>
-    <a href="rrk-3-0.html">RRK 3.0</a>
-</nav>
+<main class="content">
 
-<main>
-    <h1>RRK 2.0 – Structural Model</h1>
+    <h2>RRK 2.0 – Rekursive Relationen</h2>
 
     <p>
-        RRK 2.0 definiert die grundlegende Struktur rekursiver Systeme. Im Zentrum steht
-        die Frage: <em>Welche Elemente und Relationen müssen existieren, damit ein System
-        überhaupt rekursiv operieren kann?</em>
+        RRK 2.0 markiert den Übergang von einer rein strukturellen Beschreibung 
+        relationaler Systeme hin zu einer ersten Form **rekursiver Dynamik**. 
+        Während RRK 1.x primär festhielt, <em>was</em> ein System ist, beschreibt 
+        RRK 2.0 erstmals, <em>wie</em> ein System sich selbst durch seine Relationen 
+        fortlaufend erzeugt.
     </p>
 
-    <h2>Elemente</h2>
+    <h3>Grundidee</h3>
+    <p>
+        Ein System besteht nicht aus festen Elementen, sondern aus 
+        **Relationen**, die sich gegenseitig stabilisieren.  
+        RRK 2.0 formuliert dies als rekursiven Prozess:
+    </p>
+
+    <p style="text-align:center; font-size:1.2em;">
+        $R_{t+1} = f(R_t)$
+    </p>
+
+    <p>
+        Die Relationen eines Systems erzeugen die nächsten Relationen.  
+        Dadurch entsteht ein **selbstreferenzieller Entwicklungsprozess**, 
+        der weder extern gesteuert noch vollständig vorhersehbar ist.
+    </p>
+
+    <h3>Eigenschaften von RRK 2.0</h3>
+
     <ul>
-        <li>Zustandsraum \(X\)</li>
-        <li>Rekursive Abbildungen \(F = \{f_1, f_2, …\}\)</li>
-        <li>Relationale Struktur \(R\)</li>
+        <li><strong>Selbstrekursion:</strong> Das System erzeugt seine eigene nächste Version.</li>
+        <li><strong>Stabilität durch Wiederholung:</strong> Muster entstehen, wenn Relationen sich wiederholen.</li>
+        <li><strong>Drift:</strong> Kleine Abweichungen akkumulieren und verändern langfristig die Struktur.</li>
+        <li><strong>Keine festen Elemente:</strong> Nur Relationen und ihre Transformationen sind fundamental.</li>
     </ul>
 
-    <h2>Grundidee</h2>
+    <h3>Beispielhafte Interpretation</h3>
     <p>
-        RRK 2.0 beschreibt Systeme als <strong>rekursiv geschlossene Strukturen</strong>, in denen
-        jede Operation auf vorherigen Operationen basiert.
+        Ein soziales System (z. B. eine Gruppe) entsteht nicht durch die Individuen, 
+        sondern durch die **Kommunikationsmuster**, die sich rekursiv fortsetzen.  
+        Ändern sich die Muster, ändert sich das System.
     </p>
+
+    <h3>Bedeutung im RRK‑Gesamtmodell</h3>
+    <p>
+        RRK 2.0 bildet die Grundlage für alle späteren Versionen.  
+        RRK 2.1 und 2.2 verfeinern die Dynamik, RRK 3.0 führt Attraktoren ein,  
+        und RRK 4.0 erweitert das Modell um **Meta‑Rekursion**.  
+        Ohne die rekursive Basis von RRK 2.0 wäre diese Entwicklung nicht möglich.
+    </p>
+
 </main>
 
+<footer class="site-footer">
+    <p>RRK Framework – Eine theoretische Forschungsarchitektur</p>
+</footer>
 
 </body>
 </html>
