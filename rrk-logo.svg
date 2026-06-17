@@ -2,7 +2,7 @@
 <svg width="240" height="240" viewBox="0 0 240 240"
      xmlns="http://www.w3.org/2000/svg"
      role="img" aria-label="RRK Framework Logo">
-  <!-- Hintergrund transparent -->
+
   <defs>
     <style>
       .stroke { stroke:#ffffff; stroke-width:10; fill:none; stroke-linecap:round; stroke-linejoin:round; }
@@ -10,18 +10,27 @@
     </style>
   </defs>
 
-  <!-- Rahmen -->
-  <rect x="20" y="20" width="200" height="200" class="stroke"/>
-
-  <!-- diagonale Struktur (RRK-Dynamik) -->
+  <!-- Halbkreis oben -->
   <path class="stroke"
-        d="M60 190 L120 130 L180 70"/>
+        d="M 60 120
+           A 60 60 0 0 1 180 120" />
 
-  <!-- parallele Linie dazu -->
+  <!-- Horizontale Linie -->
+  <line x1="40" y1="120" x2="200" y2="120" class="stroke"/>
+
+  <!-- Raute in der Mitte -->
   <path class="stroke"
-        d="M60 160 L120 100 L180 40"/>
+        d="M 120 100
+           L 140 120
+           L 120 140
+           L 100 120
+           Z" />
 
-  <!-- Kernpunkt (RRK-Kern) -->
-  <circle cx="120" cy="130" r="8" class="fill"/>
+  <!-- Pfeil rechts -->
+  <path class="stroke"
+        d="M 200 120
+           L 180 110
+           M 200 120
+           L 180 130" />
 
 </svg>
