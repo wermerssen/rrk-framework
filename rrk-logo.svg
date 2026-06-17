@@ -26,11 +26,11 @@
            L 100 120
            Z" />
 
-  <!-- Pfeil rechts -->
+  <!-- Pfeil rechts (weiter innen, eleganter) -->
   <path class="stroke"
-        d="M 200 120
-           L 180 110
-           M 200 120
-           L 180 130" />
+        d="M 170 120
+           L 150 110
+           M 170 120
+           L 150 130" />
 
 </svg>
