@@ -6,20 +6,24 @@
   <!-- Hintergrund transparent -->
   <rect width="240" height="240" fill="none"/>
 
-  <!-- Rekursive Quadrate (RRK-Ebenen) -->
-  <g stroke="#1A1A1A" stroke-width="10" fill="none" stroke-linejoin="round">
+  <!-- Technisch-minimalistische Linienstruktur (Version von gestern) -->
+  <g stroke="#FFFFFF" stroke-width="10" fill="none" stroke-linecap="round">
 
-    <!-- Ebene 1 -->
-    <rect x="20" y="20" width="200" height="200" rx="12"/>
+    <!-- Diagonale Hauptlinie -->
+    <line x1="40" y1="200" x2="200" y2="40"/>
 
-    <!-- Ebene 2 -->
-    <rect x="55" y="55" width="130" height="130" rx="10"/>
+    <!-- Parallele Linie 1 -->
+    <line x1="60" y1="200" x2="200" y2="60"/>
 
-    <!-- Ebene 3 -->
-    <rect x="85" y="85" width="70" height="70" rx="8"/>
+    <!-- Parallele Linie 2 -->
+    <line x1="40" y1="180" x2="180" y2="40"/>
 
-    <!-- Ebene 4 (Kern) -->
-    <rect x="105" y="105" width="30" height="30" rx="6"/>
+    <!-- Vertikale Struktur links -->
+    <line x1="40" y1="40" x2="40" y2="200"/>
+
+    <!-- Vertikale Struktur rechts -->
+    <line x1="200" y1="40" x2="200" y2="200"/>
+
   </g>
 
 </svg>
