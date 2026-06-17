@@ -11,18 +11,16 @@
   </defs>
 
   <!-- Halbkreis -->
-  <path class="stroke"
-        d="M 70 120 A 50 50 0 0 1 170 120" />
+  <path class="stroke" d="M70 120 A50 50 0 0 1 170 120" />
 
   <!-- Horizontale Linie -->
   <line x1="40" y1="120" x2="200" y2="120" class="stroke"/>
 
   <!-- Raute -->
-  <path class="thin"
-        d="M 120 105 L 135 120 L 120 135 L 105 120 Z" />
+  <path class="thin" d="M120 105 L135 120 L120 135 L105 120 Z" />
 
-  <!-- Moderne, offene Pfeilspitze (größerer Abstand, klarer, eleganter) -->
+  <!-- Pfeilspitze mit offenem Rahmen -->
   <line x1="185" y1="120" x2="160" y2="108" class="stroke"/>
   <line x1="185" y1="120" x2="160" y2="132" class="stroke"/>
-
+  <line x1="160" y1="108" x2="160" y2="132" class="thin"/>
 </svg>
