@@ -1,91 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>RRK 4.0 – Meta‑Recursive System Transformation</title>
-    <link rel="stylesheet" href="../style.css?v=1003">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-</head>
+  <meta charset="UTF-8">
+  <title>RRK 4.0 – Meta‑Rekursion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+  <style>
+    :root {
+      --primary: #2A6BF2;
+      --secondary: #1A1A1A;
+      --bg: #FAFAFA;
+      --accent: #EAEAEA;
+      --text: #222222;
+    }
 
-<header class="site-header">
-    <img src="../rrk-logo.svg" alt="RRK Logo" class="rrk-logo">
-</header>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-<nav class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="rrk-2-0.html">RRK 2.0</a>
-    <a href="rrk-2-1.html">RRK 2.1</a>
-    <a href="rrk-2-2.html">RRK 2.2</a>
-    <a href="rrk-3-0.html">RRK 3.0</a>
-    <a class="active" href="rrk-4-0.html">RRK 4.0</a>
-</nav>
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid var(--accent);
+      z-index: 100;
+    }
 
-<main>
-    <h1>RRK 4.0 – Meta‑Recursive System Transformation</h1>
-
-    <p>
-        RRK 4.0 beschreibt Systeme, die nicht nur rekursiv operieren, sondern die
-        <strong>Regeln ihrer eigenen Rekursion rekursiv transformieren</strong>.
-        Es ist die Ebene der Meta‑Rekursion und der Emergenz zweiter Ordnung.
-    </p>
-
-    <h2>Formale Definition</h2>
-
-    <p>RRK 4.0 erweitert das Framework um den Meta‑Operator:</p>
-
-    
-
-\[
-    \Omega : (F, R, \Theta, \Lambda) \rightarrow (F', R', \Theta', \Lambda')
-    \]
-
-
-
-    <p>
-        Damit wird das RRK‑Framework zu:
-    </p>
-
-    
-
-\[
-    \mathcal{R}_{4.0} = (X, F, R, \Theta, \Lambda, \Omega)
-    \]
-
-
-
-    <h2>Meta‑Attraktoren</h2>
-
-    
-
-\[
-    \Lambda^\* = \{\lambda^\*_1, \lambda^\*_2, …\}
-    \]
-
-
-
-    <p>
-        Meta‑Attraktoren beschreiben stabile Muster in der Veränderung der
-        Attraktoren selbst.
-    </p>
-
-    <h2>Emergenz zweiter Ordnung</h2>
-    <p>
-        RRK 4.0 erklärt, warum Systeme stabile Muster in der Veränderung ihrer
-        eigenen Muster entwickeln – eine Meta‑Ebene der Selbstorganisation.
-    </p>
-
-    <h2>Beispiele</h2>
-    <ul>
-        <li>Biologische Evolution (Meta‑Mutation)</li>
-        <li>KI‑Systeme mit selbstmodifizierenden Lernregeln</li>
-        <li>Ökonomische Systeme mit wandelnden Marktmechanismen</li>
-    </ul>
-</main>
-
-</body>
-</html>
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding
