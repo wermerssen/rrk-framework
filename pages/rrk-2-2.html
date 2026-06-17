@@ -1,34 +1,90 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RRK 2.2</title>
+  <meta charset="UTF-8">
+  <title>RRK 2.2 – Variation & Selektion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/rrk-framework/style.css">
+  <style>
+    :root {
+      --primary: #2A6BF2;
+      --secondary: #1A1A1A;
+      --bg: #FAFAFA;
+      --accent: #EAEAEA;
+      --text: #222222;
+    }
 
-    <script>
-        MathJax = {
-            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
-        };
-    </script>
-    <script id="MathJax-script" async 
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-</head>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
 
-<body>
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid var(--accent);
+      z-index: 100;
+    }
 
-<header class="site-header">
-    <div class="header-content">
-        <img src="/rrk-framework/rrk-logo.svg" alt="RRK Logo" class="rrk-logo">
-        <div class="header-title">
-            <h1>RRK Framework</h1>
-            <p class="subtitle">Recursive‑Relational Knowledge</p>
-        </div>
-    </div>
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
-    <nav class="site-nav">
-        <a href="/rrk-framework/index.html">Home</a>
-        <a href="/rrk-framework/pages/rrk-2.0.html">RRK 2.0</a>
-        <a href="/rrk-framework/pages/rrk-2.1.html">RRK 2.1</a>
+    .nav img {
+      height: 32px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--secondary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .nav a:hover {
+      background: var(--accent);
+    }
+
+    .nav a.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .abstract, .section-box {
+      background: #ffffff;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .examples {
+      background: #f5f7fb;
+      border-color: #dfe5ff;
+    }
+
+    .footer-nav {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--accent);
