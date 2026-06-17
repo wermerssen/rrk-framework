@@ -6,31 +6,32 @@
   <defs>
     <style>
       .stroke { stroke:#ffffff; stroke-width:10; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+      .thin   { stroke:#ffffff; stroke-width:8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
       .fill   { fill:#ffffff; }
     </style>
   </defs>
 
-  <!-- Halbkreis oben -->
+  <!-- Halbkreis oben (leicht nach vorne gezogen, moderner Radius) -->
   <path class="stroke"
-        d="M 60 120
-           A 60 60 0 0 1 180 120" />
+        d="M 70 120
+           A 50 50 0 0 1 170 120" />
 
-  <!-- Horizontale Linie -->
+  <!-- Horizontale Linie (leicht verlängert, optisch ruhiger) -->
   <line x1="40" y1="120" x2="200" y2="120" class="stroke"/>
 
-  <!-- Raute in der Mitte -->
-  <path class="stroke"
-        d="M 120 100
-           L 140 120
-           L 120 140
-           L 100 120
+  <!-- Raute (leicht gedreht, moderner, präziser) -->
+  <path class="thin"
+        d="M 120 105
+           L 135 120
+           L 120 135
+           L 105 120
            Z" />
 
-  <!-- Pfeil rechts (weiter innen, eleganter) -->
+  <!-- Pfeil (modernere, längere, elegantere Spitze) -->
   <path class="stroke"
-        d="M 170 120
-           L 150 110
-           M 170 120
-           L 150 130" />
+        d="M 175 120
+           L 150 108
+           M 175 120
+           L 150 132" />
 
 </svg>
