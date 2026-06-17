@@ -19,3 +19,202 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
                    "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid var(--accent);
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav img {
+      height: 32px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--secondary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+
+    .nav a:hover {
+      background: var(--accent);
+    }
+
+    .nav a.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .abstract, .section-box {
+      background: #ffffff;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .examples {
+      background: #f5f7fb;
+      border-color: #dfe5ff;
+    }
+
+    .footer-nav {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--accent);
+      font-size: 0.9rem;
+    }
+
+    .footer-nav a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\
+
+\[', '\\]
+
+']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <img src="rrk-logo.svg" alt="RRK Logo">
+      <a href="index.html">Home</a>
+      <a href="rrk-2-0.html">RRK 2.0</a>
+      <a href="rrk-2-1.html">RRK 2.1</a>
+      <a href="rrk-2-2.html">RRK 2.2</a>
+      <a href="rrk-3-0.html">RRK 3.0</a>
+      <a href="rrk-4-0.html">RRK 4.0</a>
+      <a href="rrk-4-1.html">RRK 4.1</a>
+      <a href="rrk-4-2.html">RRK 4.2</a>
+      <a href="rrk-4-3.html">RRK 4.3</a>
+      <a href="rrk-4-4.html" class="active">RRK 4.4</a>
+      <a href="rrk-5-0.html">RRK 5.0</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>RRK 4.4 – Ω‑Algebra & Meta‑Operatorik</h1>
+    <p><em>Die algebraische Struktur der Meta‑Rekursion</em></p>
+
+    <section class="abstract">
+      <h2>Abstract</h2>
+      <p>
+        RRK&nbsp;4.4 formalisiert die algebraische Struktur, die Meta‑Rekursion
+        ermöglicht. Die Ω‑Algebra beschreibt Operatoren, Meta‑Operatoren, ihre
+        Komposition, Stabilitätsordnungen und Fixpunkte. Sie bildet das Fundament für
+        Meta‑Attraktoren, Meta‑Transitionsräume und Hyper‑Rekursion.
+      </p>
+    </section>
+
+    <section class="section-box">
+      <h2>1. Motivation</h2>
+      <p>
+        RRK&nbsp;4.0–4.3 beschreiben Meta‑Rekursion, Meta‑Stabilität, Meta‑Attraktoren
+        und Meta‑Transitionsräume. Doch all diese Phänomene setzen eine zugrunde
+        liegende Struktur voraus:
+      </p>
+      <p><strong>Eine Algebra der Meta‑Operatoren.</strong></p>
+      <p>
+        RRK&nbsp;4.4 definiert diese Struktur als Ω‑Algebra.
+      </p>
+    </section>
+
+    <section class="section-box">
+      <h2>2. Definition</h2>
+      <p>Die Ω‑Algebra ist definiert als:</p>
+      <p>\
+
+\[ \mathcal{A}_\Omega = (R, \Omega, \circ, \leq) \\]
+
+</p>
+      <p>mit:</p>
+      <p><strong>R:</strong> Menge der Operatoren</p>
+      <p><strong>Ω:</strong> Menge der Meta‑Operatoren</p>
+      <p><strong>∘:</strong> Komposition</p>
+      <p><strong>≤:</strong> Stabilitätsordnung</p>
+    </section>
+
+    <section class="section-box">
+      <h2>3. Formale Struktur</h2>
+      <p><strong>(1) Operatorraum:</strong> \\( R = \{ R_1, R_2, \dots \} \\)</p>
+      <p><strong>(2) Meta‑Operatorraum:</strong> \\( \Omega = \{ \Omega_1, \Omega_2, \dots \} \\)</p>
+      <p><strong>(3) Komposition:</strong> \\( \Omega_i \circ \Omega_j \\)</p>
+      <p><strong>(4) Stabilitätsordnung:</strong> \\( R_i \leq R_j \\)</p>
+      <p><strong>(5) Meta‑Fixpunkte:</strong> \\( \Omega(R^*) = R^* \\)</p>
+    </section>
+
+    <section class="section-box examples">
+      <h2>4. Beispiele</h2>
+      <p><strong>Biologie:</strong> Genregulation + epigenetische Meta‑Regulation.</p>
+      <p><strong>Soziale Systeme:</strong> Regeln + Meta‑Regeln (Verfassungen).</p>
+      <p><strong>KI:</strong> Learning‑to‑Learn + Meta‑Meta‑Learning.</p>
+      <p><strong>Physik:</strong> Renormierungsgruppen.</p>
+    </section>
+
+    <section class="section-box">
+      <h2>5. Konsequenzen</h2>
+      <p>Meta‑Rekursion ist algebraisch strukturiert.</p>
+      <p>Meta‑Operatoren können kombiniert, geordnet und stabilisiert werden.</p>
+      <p>Meta‑Attraktoren sind Fixpunkte der Ω‑Algebra.</p>
+      <p>Meta‑Transitionsräume sind Wege in dieser Algebra.</p>
+      <p>Komplexe Systeme besitzen eine hierarchische Operatorik.</p>
+    </section>
+
+    <section class="section-box">
+      <h2>6. Übergang zu RRK 5.0</h2>
+      <p>
+        RRK&nbsp;4.4 schließt die Meta‑Ebene ab. RRK&nbsp;5.0 beschreibt Systeme, die
+        nicht nur ihre Operatoren verändern, sondern die Struktur der Ω‑Algebra selbst:
+        Hyper‑Rekursion.
+      </p>
+    </section>
+
+    <div class="footer-nav">
+      <p>Nächste Seite: <a href="rrk-5-0.html">RRK 5.0 – Hyper‑Rekursion</a></p>
+    </div>
+
+  </main>
+</body>
+</html>
