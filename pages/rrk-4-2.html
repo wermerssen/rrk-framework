@@ -8,11 +8,10 @@
 
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
-
-\[', '\\]
-
-']] }
+      tex: {
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+      }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -53,9 +52,9 @@
     <p>
       Die Drift ergibt sich aus der Summe lokaler Abweichungen:
     </p>
-    <p>\
+    <p>
 
-\[ D_t = \sum_i \epsilon^{(i)}_t \\]
+\[ D_t = \sum_i \epsilon^{(i)}_t \]
 
 </p>
   </section>

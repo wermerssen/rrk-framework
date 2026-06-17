@@ -8,11 +8,10 @@
 
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
-
-\[', '\\]
-
-']] }
+      tex: {
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+      }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -53,9 +52,9 @@
     <p>
       Eine Transformation wirkt auf alle Systeme:
     </p>
-    <p>\
+    <p>
 
-\[ S^{(i)}_{t+1} = T(R(S^{(i)}_t)) \\]
+\[ S^{(i)}_{t+1} = T(R(S^{(i)}_t)) \]
 
 </p>
   </section>

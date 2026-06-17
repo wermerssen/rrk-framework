@@ -8,11 +8,10 @@
 
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
-
-\[', '\\]
-
-']] }
+      tex: {
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+      }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -54,9 +53,9 @@
     <p>
       Eine Transformation ist eine Abbildung:
     </p>
-    <p>\
+    <p>
 
-\[ T: \mathcal{S}_A \rightarrow \mathcal{S}_B \\]
+\[ T: \mathcal{S}_A \rightarrow \mathcal{S}_B \]
 
 </p>
   </section>
@@ -66,9 +65,9 @@
     <p>
       Transformationen können selbst rekursiv sein:
     </p>
-    <p>\
+    <p>
 
-\[ S_{t+1} = T(R(S_t)) \\]
+\[ S_{t+1} = T(R(S_t)) \]
 
 </p>
   </section>

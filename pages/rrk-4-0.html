@@ -8,11 +8,10 @@
 
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
-
-\[', '\\]
-
-']] }
+      tex: {
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+      }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -54,9 +53,9 @@
     <p>
       Ein Ensemble besteht aus vielen rekursiven Systemen:
     </p>
-    <p>\
+    <p>
 
-\[ \{ S^{(1)}, S^{(2)}, \dots, S^{(n)} \} \\]
+\[ \{ S^{(1)}, S^{(2)}, \dots, S^{(n)} \} \]
 
 </p>
   </section>
@@ -66,9 +65,9 @@
     <p>
       Systeme beeinflussen sich gegenseitig:
     </p>
-    <p>\
+    <p>
 
-\[ S^{(i)}_{t+1} = R(S^{(i)}_t) + C(S^{(j)}_t) \\]
+\[ S^{(i)}_{t+1} = R(S^{(i)}_t) + C(S^{(j)}_t) \]
 
 </p>
   </section>

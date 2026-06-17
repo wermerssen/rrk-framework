@@ -9,12 +9,8 @@
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [['\
-
-\[', '\\]
-
-']]
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
       }
     };
   </script>
@@ -22,113 +18,115 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <img src="../rrk-logo.svg" alt="RRK Logo">
-      <a href="../index.html">Home</a>
-      <a href="rrk-2-0.html" class="active">RRK 2.0</a>
-      <a href="rrk-2-1.html">RRK 2.1</a>
-      <a href="rrk-2-2.html">RRK 2.2</a>
-      <a href="rrk-3-0.html">RRK 3.0</a>
-      <a href="rrk-4-0.html">RRK 4.0</a>
-      <a href="rrk-4-1.html">RRK 4.1</a>
-      <a href="rrk-4-2.html">RRK 4.2</a>
-      <a href="rrk-4-3.html">RRK 4.3</a>
-      <a href="rrk-4-4.html">RRK 4.4</a>
-      <a href="rrk-5-0.html">RRK 5.0</a>
-    </nav>
-  </header>
 
-  <main>
-    <h1>RRK 2.0 – Rekursion & Systemselbstreferenz</h1>
-    <p><em>Wie Systeme sich selbst erzeugen, ohne externe Steuerung</em></p>
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0.html" class="active">RRK 2.0</a>
+    <a href="rrk-2-1.html">RRK 2.1</a>
+    <a href="rrk-2-2.html">RRK 2.2</a>
+    <a href="rrk-3-0.html">RRK 3.0</a>
+    <a href="rrk-4-0.html">RRK 4.0</a>
+    <a href="rrk-4-1.html">RRK 4.1</a>
+    <a href="rrk-4-2.html">RRK 4.2</a>
+    <a href="rrk-4-3.html">RRK 4.3</a>
+    <a href="rrk-4-4.html">RRK 4.4</a>
+    <a href="rrk-5-0.html">RRK 5.0</a>
+  </nav>
+</header>
 
-    <section class="abstract">
-      <h2>Abstract</h2>
-      <p>
-        RRK 2.0 definiert rekursive Systeme als Strukturen, die ihre eigenen
-        Zustände durch interne Operatoren erzeugen. Ein System ist nicht nur
-        „betroffen“ von Regeln, sondern erzeugt seine eigene Dynamik durch
-        wiederholte Anwendung eines Rekursionsoperators.
-      </p>
-    </section>
+<main>
+  <h1>RRK 2.0 – Rekursion & Systemselbstreferenz</h1>
+  <p><em>Wie Systeme sich selbst erzeugen, ohne externe Steuerung</em></p>
 
-    <section class="section-box">
-      <h2>1. Motivation</h2>
-      <p>
-        Klassische Systemtheorie trennt System und Umwelt, Regeln und Zustände.
-        RRK 2.0 setzt an einem anderen Punkt an:
-      </p>
-      <p><strong>Ein System ist das, was sich selbst rekursiv erzeugt.</strong></p>
-    </section>
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 2.0 definiert rekursive Systeme als Strukturen, die ihre eigenen
+      Zustände durch interne Operatoren erzeugen. Ein System ist nicht nur
+      „betroffen“ von Regeln, sondern erzeugt seine eigene Dynamik durch
+      wiederholte Anwendung eines Rekursionsoperators.
+    </p>
+  </section>
 
-    <section class="section-box">
-      <h2>2. Definition</h2>
-      <p>Ein rekursives System besteht aus:</p>
+  <section class="section-box">
+    <h2>1. Motivation</h2>
+    <p>
+      Klassische Systemtheorie trennt System und Umwelt, Regeln und Zustände.
+      RRK 2.0 setzt an einem anderen Punkt an:
+    </p>
+    <p><strong>Ein System ist das, was sich selbst rekursiv erzeugt.</strong></p>
+  </section>
 
-      <p>\
+  <section class="section-box">
+    <h2>2. Definition</h2>
+    <p>Ein rekursives System besteht aus:</p>
 
-\[ S_t \quad \text{(Zustand zur Zeit } t) \\]
+    <p>
 
-</p>
-      <p>\
-
-\[ R \quad \text{(Rekursionsoperator)} \\]
+\[ S_t \quad \text{(Zustand zur Zeit } t) \]
 
 </p>
+    <p>
 
-      <p>Die Dynamik ist gegeben durch:</p>
-      <p>\
-
-\[ S_{t+1} = R(S_t) \\]
-
-</p>
-    </section>
-
-    <section class="section-box">
-      <h2>3. Formale Struktur</h2>
-      <p><strong>(1) Zustandsraum:</strong> \\( S \in \mathcal{S} \\)</p>
-      <p><strong>(2) Operator:</strong> \\( R: \mathcal{S} \rightarrow \mathcal{S} \\)</p>
-
-      <p><strong>(3) Rekursionskette:</strong></p>
-      <p>\
-
-\[ S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots \\]
+\[ R \quad \text{(Rekursionsoperator)} \]
 
 </p>
 
-      <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst.</p>
-    </section>
+    <p>Die Dynamik ist gegeben durch:</p>
+    <p>
 
-    <section class="section-box examples">
-      <h2>4. Beispiele</h2>
-      <p><strong>Biologie:</strong> Genregulation erzeugt rekursiv Zellzustände.</p>
-      <p><strong>Soziale Systeme:</strong> Kommunikation erzeugt weitere Kommunikation.</p>
-      <p><strong>KI:</strong> Rekursive Aktivierungen in neuronalen Netzen.</p>
-      <p><strong>Mathematik:</strong> Folgen \\( x_{n+1} = f(x_n) \\).</p>
-    </section>
+\[ S_{t+1} = R(S_t) \]
 
-    <section class="section-box">
-      <h2>5. Konsequenzen</h2>
-      <p>Systeme sind aktiv selbstgenerierend.</p>
-      <p>Stabilität entsteht aus der Form von \\( R \\).</p>
-      <p>Rekursion erzeugt Drift, Variation und Attraktoren.</p>
-    </section>
+</p>
+  </section>
 
-    <section class="section-box">
-      <h2>6. Übergang zu RRK 2.1</h2>
-      <p>
-        RRK 2.0 definiert rekursive Systeme. RRK 2.1 beschreibt Drift und
-        Stabilisierung.
-      </p>
-      <p>
-        Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift & Stabilisierung</a>
-      </p>
-    </section>
+  <section class="section-box">
+    <h2>3. Formale Struktur</h2>
+    <p><strong>(1) Zustandsraum:</strong> \( S \in \mathcal{S} \)</p>
+    <p><strong>(2) Operator:</strong> \( R: \mathcal{S} \rightarrow \mathcal{S} \)</p>
 
-    <div class="footer-nav">
-      <p><a href="../index.html">Zur Übersicht</a></p>
-    </div>
-  </main>
+    <p><strong>(3) Rekursionskette:</strong></p>
+    <p>
+
+\[ S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots \]
+
+</p>
+
+    <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst.</p>
+  </section>
+
+  <section class="section-box examples">
+    <h2>4. Beispiele</h2>
+    <p><strong>Biologie:</strong> Genregulation erzeugt rekursiv Zellzustände.</p>
+    <p><strong>Soziale Systeme:</strong> Kommunikation erzeugt weitere Kommunikation.</p>
+    <p><strong>KI:</strong> Rekursive Aktivierungen in neuronalen Netzen.</p>
+    <p><strong>Mathematik:</strong> Folgen \( x_{n+1} = f(x_n) \).</p>
+  </section>
+
+  <section class="section-box">
+    <h2>5. Konsequenzen</h2>
+    <p>Systeme sind aktiv selbstgenerierend.</p>
+    <p>Stabilität entsteht aus der Form von \( R \).</p>
+    <p>Rekursion erzeugt Drift, Variation und Attraktoren.</p>
+  </section>
+
+  <section class="section-box">
+    <h2>6. Übergang zu RRK 2.1</h2>
+    <p>
+      RRK 2.0 definiert rekursive Systeme. RRK 2.1 beschreibt Drift und
+      Stabilisierung.
+    </p>
+    <p>
+      Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift & Stabilisierung</a>
+    </p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Zur Übersicht</a></p>
+  </div>
+</main>
+
 </body>
 </html>

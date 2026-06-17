@@ -8,11 +8,10 @@
 
   <script>
     window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\
-
-\[', '\\]
-
-']] }
+      tex: {
+        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
+        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+      }
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
@@ -55,13 +54,13 @@
       Drift bezeichnet die systematische Verschiebung des Zustands durch
       wiederholte Rekursion:
     </p>
-    <p>\
+    <p>
 
-\[ S_{t+1} = R(S_t) + \epsilon_t \\]
+\[ S_{t+1} = R(S_t) + \epsilon_t \]
 
 </p>
     <p>
-      Kleine Fehler \\( \epsilon_t \\) akkumulieren sich und erzeugen
+      Kleine Fehler \( \epsilon_t \) akkumulieren sich und erzeugen
       langfristige Veränderung.
     </p>
   </section>
@@ -71,13 +70,13 @@
     <p>
       Systeme stabilisieren sich durch interne Gegenkräfte:
     </p>
-    <p>\
+    <p>
 
-\[ S_{t+1} = R(S_t) - K(S_t - S^\*) \\]
+\[ S_{t+1} = R(S_t) - K(S_t - S^\*) \]
 
 </p>
     <p>
-      Dabei ist \\( S^\* \\) ein Attraktor oder Sollwert.
+      Dabei ist \( S^\* \) ein Attraktor oder Sollwert.
     </p>
   </section>
 
