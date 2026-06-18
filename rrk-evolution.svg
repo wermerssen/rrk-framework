@@ -1,52 +1,58 @@
-<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+ <svg width="900" height="900" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
 
   <!-- Hintergrund -->
-  <rect width="900" height="600" fill="#fafafa"/>
+  <rect width="100%" height="100%" fill="white"/>
 
-  <!-- Farben -->
-  <!-- Innenkreis: Entwicklung 2.x → 4.4 -->
-  <!-- Außenkreis: Meta-Ebene 4.4 → 5.0 -->
-  <defs>
-    <style>
-      .label { font-family: 'Inter', sans-serif; font-size: 20px; fill: #333; }
-      .title { font-family: 'Inter', sans-serif; font-size: 28px; fill: #111; font-weight: 600; }
-    </style>
-  </defs>
+  <!-- Spiralpfad (Struktur-Ebene 2.x–4.4) -->
+  <path d="
+    M450,450
+    m-20,-20
+    a20,20 0 1,1 40,0
+    a40,40 0 1,1 -80,0
+    a80,80 0 1,1 160,0
+    a140,140 0 1,1 -280,0
+    a220,220 0 1,1 440,0
+  "
+  fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- Spiralpfad (Meta-Ebene 5.0) -->
+  <path d="
+    M450,450
+    m-260,-260
+    a260,260 0 1,1 520,0
+  "
+  fill="none" stroke="#0055ff" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <!-- Punkte für Versionen -->
+  <circle cx="450" cy="430" r="8" fill="#000"/> <!-- 2.0 -->
+  <circle cx="450" cy="390" r="8" fill="#000"/> <!-- 2.1 -->
+  <circle cx="450" cy="330" r="8" fill="#000"/> <!-- 2.2 -->
+  <circle cx="450" cy="250" r="10" fill="#000"/> <!-- 3.0 -->
+  <circle cx="450" cy="150" r="10" fill="#000"/> <!-- 4.0 -->
+  <circle cx="450" cy="80"  r="10" fill="#000"/> <!-- 4.1 -->
+  <circle cx="450" cy="40"  r="10" fill="#000"/> <!-- 4.2 -->
+  <circle cx="450" cy="20"  r="10" fill="#000"/> <!-- 4.3 -->
+  <circle cx="450" cy="10"  r="12" fill="#000"/> <!-- 4.4 -->
+
+  <!-- Meta-Ebene 5.0 -->
+  <circle cx="450" cy="450" r="260" fill="none" stroke="#0055ff" stroke-width="3"/>
+
+  <!-- Labels -->
+  <text x="470" y="430" font-size="20" fill="#000">2.0</text>
+  <text x="470" y="390" font-size="20" fill="#000">2.1</text>
+  <text x="470" y="330" font-size="20" fill="#000">2.2</text>
+  <text x="470" y="250" font-size="22" fill="#000">3.0</text>
+  <text x="470" y="150" font-size="22" fill="#000">4.0</text>
+  <text x="470" y="80"  font-size="22" fill="#000">4.1</text>
+  <text x="470" y="40"  font-size="22" fill="#000">4.2</text>
+  <text x="470" y="20"  font-size="22" fill="#000">4.3</text>
+  <text x="470" y="10"  font-size="24" fill="#000">4.4</text>
+
+  <text x="650" y="450" font-size="28" fill="#0055ff">5.0 – Meta‑Ebene</text>
 
   <!-- Titel -->
-  <text x="450" y="60" text-anchor="middle" class="title">
-    RRK‑Evolution – Meta‑Rekursive Struktur
+  <text x="450" y="870" font-size="32" fill="#000" text-anchor="middle">
+    RRK‑Evolution – Rekursive Struktur- und Meta‑Rekursion
   </text>
-
-  <!-- Außenkreis (Meta-Ebene) -->
-  <circle cx="450" cy="320" r="220" fill="none" stroke="#4A90E2" stroke-width="6"/>
-
-  <!-- Innenkreis (Versionen 2.x → 4.4) -->
-  <circle cx="450" cy="320" r="140" fill="none" stroke="#7B8D93" stroke-width="5"/>
-
-  <!-- Innenkreis Labels -->
-  <text x="450" y="200" text-anchor="middle" class="label">RRK 2.x</text>
-  <text x="600" y="320" text-anchor="middle" class="label">RRK 3.0</text>
-  <text x="450" y="440" text-anchor="middle" class="label">RRK 4.0–4.3</text>
-  <text x="300" y="320" text-anchor="middle" class="label">RRK 4.4</text>
-
-  <!-- Außenkreis Labels (Meta-Ebene) -->
-  <text x="450" y="110" text-anchor="middle" class="label" fill="#4A90E2">RRK 5.0</text>
-
-  <!-- Pfeile Innenkreis -->
-  <path d="M450 215 L580 315" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-  <path d="M585 325 L450 430" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-  <path d="M445 430 L315 325" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-  <path d="M315 315 L445 215" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-
-  <!-- Pfeil Außenkreis -->
-  <path d="M450 100 L450 200" stroke="#4A90E2" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
-
-  <!-- Pfeil-Definition -->
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#555"/>
-    </marker>
-  </defs>
 
 </svg>
