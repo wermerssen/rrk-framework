@@ -1,0 +1,52 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Hintergrund -->
+  <rect width="900" height="600" fill="#fafafa"/>
+
+  <!-- Farben -->
+  <!-- Innenkreis: Entwicklung 2.x → 4.4 -->
+  <!-- Außenkreis: Meta-Ebene 4.4 → 5.0 -->
+  <defs>
+    <style>
+      .label { font-family: 'Inter', sans-serif; font-size: 20px; fill: #333; }
+      .title { font-family: 'Inter', sans-serif; font-size: 28px; fill: #111; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Titel -->
+  <text x="450" y="60" text-anchor="middle" class="title">
+    RRK‑Evolution – Meta‑Rekursive Struktur
+  </text>
+
+  <!-- Außenkreis (Meta-Ebene) -->
+  <circle cx="450" cy="320" r="220" fill="none" stroke="#4A90E2" stroke-width="6"/>
+
+  <!-- Innenkreis (Versionen 2.x → 4.4) -->
+  <circle cx="450" cy="320" r="140" fill="none" stroke="#7B8D93" stroke-width="5"/>
+
+  <!-- Innenkreis Labels -->
+  <text x="450" y="200" text-anchor="middle" class="label">RRK 2.x</text>
+  <text x="600" y="320" text-anchor="middle" class="label">RRK 3.0</text>
+  <text x="450" y="440" text-anchor="middle" class="label">RRK 4.0–4.3</text>
+  <text x="300" y="320" text-anchor="middle" class="label">RRK 4.4</text>
+
+  <!-- Außenkreis Labels (Meta-Ebene) -->
+  <text x="450" y="110" text-anchor="middle" class="label" fill="#4A90E2">RRK 5.0</text>
+
+  <!-- Pfeile Innenkreis -->
+  <path d="M450 215 L580 315" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M585 325 L450 430" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M445 430 L315 325" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M315 315 L445 215" stroke="#7B8D93" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Pfeil Außenkreis -->
+  <path d="M450 100 L450 200" stroke="#4A90E2" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Pfeil-Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#555"/>
+    </marker>
+  </defs>
+
+</svg>
