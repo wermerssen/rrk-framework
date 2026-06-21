@@ -6,18 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
 
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['\\(', '\\)']],
-        displayMath: [['\
-
-\[', '\\]
-
-']]
-      }
-    };
-  </script>
+  <!-- Vereinfachtes MathJax-Setup, konsistent mit den späteren RRK-Versionen -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 
@@ -50,8 +39,10 @@
     <p>
       RRK 2.0 definiert rekursive Systeme als Strukturen, die ihre eigenen
       Zustände durch interne Operatoren erzeugen. Ein System ist nicht nur
-      „betroffen“ von Regeln, sondern erzeugt seine eigene Dynamik durch
-      wiederholte Anwendung eines Rekursionsoperators.
+      von Regeln „betroffen“, sondern erzeugt seine eigene Dynamik durch
+      wiederholte Anwendung eines Rekursionsoperators. 
+      RRK 2.0 bildet damit die erste explizite Formalisierung von 
+      Systemselbstreferenz im RRK‑Framework.
     </p>
   </section>
 
@@ -62,6 +53,10 @@
       RRK 2.0 setzt an einem anderen Punkt an:
     </p>
     <p><strong>Ein System ist das, was sich selbst rekursiv erzeugt.</strong></p>
+    <p>
+      Statt externe Steuerung oder Input als primäre Erklärung zu verwenden,
+      rückt RRK 2.0 die interne Rekursionslogik in den Mittelpunkt.
+    </p>
   </section>
 
   <section class="section-box">
@@ -71,7 +66,9 @@
     <p>
       
 
-\[ S_t \quad \text{(Zustand zur Zeit } t) \]
+\[
+        S_t \quad \text{(Zustand zur Zeit } t)
+      \]
 
 
     </p>
@@ -79,7 +76,9 @@
     <p>
       
 
-\[ R \quad \text{(Rekursionsoperator)} \]
+\[
+        R \quad \text{(Rekursionsoperator)}
+      \]
 
 
     </p>
@@ -89,15 +88,22 @@
     <p>
       
 
-\[ S_{t+1} = R(S_t) \]
+\[
+        S_{t+1} = R(S_t)
+      \]
 
 
+    </p>
+
+    <p>
+      Das System erzeugt seine zukünftigen Zustände durch wiederholte Anwendung
+      desselben Operators auf seine eigenen Zustände.
     </p>
   </section>
 
   <section class="section-box">
     <h2>3. Formale Struktur</h2>
-    <p><strong>(1) Zustandsraum:</strong> \( S \in \mathcal{S} \)</p>
+    <p><strong>(1) Zustandsraum:</strong> \( S_t \in \mathcal{S} \)</p>
     <p><strong>(2) Operator:</strong> \( R: \mathcal{S} \rightarrow \mathcal{S} \)</p>
 
     <p><strong>(3) Rekursionskette:</strong></p>
@@ -105,12 +111,16 @@
     <p>
       
 
-\[ S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots \]
+\[
+        S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots
+      \]
 
 
     </p>
 
-    <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst.</p>
+    <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst; 
+      es ist nicht nur Objekt, sondern auch Quelle seiner eigenen Dynamik.
+    </p>
   </section>
 
   <section class="section-box examples">
@@ -123,16 +133,28 @@
 
   <section class="section-box">
     <h2>5. Konsequenzen</h2>
-    <p>Systeme sind aktiv selbstgenerierend.</p>
-    <p>Stabilität entsteht aus der Form von \( R \).</p>
-    <p>Rekursion erzeugt Drift, Variation und Attraktoren.</p>
+    <p>Systeme sind aktiv selbstgenerierend, nicht passiv reagierend.</p>
+    <p>Stabilität entsteht aus der Form von \( R \) und der Struktur von \( \mathcal{S} \).</p>
+    <p>Rekursion erzeugt Drift, Variation und Attraktoren im Zustandsraum.</p>
   </section>
 
   <section class="section-box">
     <h2>6. Übergang zu RRK 2.1</h2>
     <p>
-      RRK 2.0 definiert rekursive Systeme. RRK 2.1 beschreibt Drift und
-      Stabilisierung.
+      RRK 2.0 definiert rekursive Systeme und ihre Selbstreferenz. 
+      RRK 2.1 erweitert diese Perspektive um Drift und Stabilisierung: 
+      Wie verändern sich rekursive Systeme über Zeit, und unter welchen 
+      Bedingungen entstehen stabile Muster oder Attraktoren?
     </p>
     <p>
-      Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift &
+      Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift &amp; Stabilisierung</a>
+    </p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Zur Übersicht</a></p>
+  </div>
+
+</main>
+</body>
+</html>
