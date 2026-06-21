@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RRK 2.0 – Recursion & System Self‑Reference</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- MathJax loader (same configuration as German version) -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0-en.html" class="active">RRK 2.0</a>
+    <a href="rrk-2-1-en.html">RRK 2.1</a>
+    <a href="rrk-2-2-en.html">RRK 2.2</a>
+    <a href="rrk-3-0-en.html">RRK 3.0</a>
+    <a href="rrk-4-0-en.html">RRK 4.0</a>
+    <a href="rrk-4-1-en.html">RRK 4.1</a>
+    <a href="rrk-4-2-en.html">RRK 4.2</a>
+    <a href="rrk-4-3-en.html">RRK 4.3</a>
+    <a href="rrk-4-4-en.html">RRK 4.4</a>
+    <a href="rrk-5-0-en.html">RRK 5.0</a>
+    <a href="../rrk-evolution.html">RRK‑Evolution</a>
+  </nav>
+</header>
+
+<main>
+  <h1>RRK 2.0 – Recursion & System Self‑Reference</h1>
+  <p><em>How systems generate themselves without external control</em></p>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 2.0 defines recursive systems as structures that generate their own
+      states through internal operators. A system is not merely “affected”
+      by rules; it produces its own dynamics through repeated application
+      of a recursion operator. 
+      RRK 2.0 thus forms the first explicit formalization of 
+      system self‑reference within the RRK framework.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>1. Motivation</h2>
+    <p>
+      Classical systems theory separates system and environment, rules and states.
+      RRK 2.0 starts from a different premise:
+    </p>
+    <p><strong>A system is what recursively generates itself.</strong></p>
+    <p>
+      Instead of treating external control or input as the primary explanation,
+      RRK 2.0 places internal recursion logic at the center.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>2. Definition</h2>
+    <p>A recursive system consists of:</p>
+
+    <p>
+      
+
+\[
+        S_t \quad \text{(state at time } t)
+      \]
+
+
+    </p>
+
+    <p>
+      
+
+\[
+        R \quad \text{(recursion operator)}
+      \]
+
+
+    </p>
+
+    <p>The system dynamics are given by:</p>
+
+    <p>
+      
+
+\[
+        S_{t+1} = R(S_t)
+      \]
+
+
+    </p>
+
+    <p>
+      The system generates its future states by repeatedly applying
+      the same operator to its own states.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>3. Formal Structure</h2>
+    <p><strong>(1) State space:</strong> \( S_t \in \mathcal{S} \)</p>
+    <p><strong>(2) Operator:</strong> \( R: \mathcal{S} \rightarrow \mathcal{S} \)</p>
+
+    <p><strong>(3) Recursion chain:</strong></p>
+
+    <p>
+      
+
+\[
+        S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots
+      \]
+
+
+    </p>
+
+    <p><strong>(4) Self‑reference:</strong> The system acts upon itself; 
+      it is not only an object but also the source of its own dynamics.
+    </p>
+  </section>
+
+  <section class="section-box examples">
+    <h2>4. Examples</h2>
+    <p><strong>Biology:</strong> Gene regulation recursively generates cell states.</p>
+    <p><strong>Social systems:</strong> Communication generates further communication.</p>
+    <p><strong>AI:</strong> Recursive activations in neural networks.</p>
+    <p><strong>Mathematics:</strong> Sequences \( x_{n+1} = f(x_n) \).</p>
+  </section>
+
+  <section class="section-box">
+    <h2>5. Consequences</h2>
+    <p>Systems are actively self‑generating, not passively reactive.</p>
+    <p>Stability emerges from the form of \( R \) and the structure of \( \mathcal{S} \).</p>
+    <p>Recursion produces drift, variation, and attractors in the state space.</p>
+  </section>
+
+  <section class="section-box">
+    <h2>6. Transition to RRK 2.1</h2>
+    <p>
+      RRK 2.0 defines recursive systems and their self‑reference. 
+      RRK 2.1 extends this perspective with drift and stabilization: 
+      How do recursive systems change over time, and under what 
+      conditions do stable patterns or attractors emerge?
+    </p>
+    <p>
+      Continue: <a href="rrk-2-1-en.html">RRK 2.1 – Drift & Stabilization</a>
+    </p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Back to overview</a></p>
+  </div>
+
+</main>
+</body>
+</html>

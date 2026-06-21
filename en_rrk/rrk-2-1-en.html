@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RRK 2.1 – Drift & Stabilization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- MathJax loader -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0-en.html">RRK 2.0</a>
+    <a href="rrk-2-1-en.html" class="active">RRK 2.1</a>
+    <a href="rrk-2-2-en.html">RRK 2.2</a>
+    <a href="rrk-3-0-en.html">RRK 3.0</a>
+    <a href="rrk-4-0-en.html">RRK 4.0</a>
+    <a href="rrk-4-1-en.html">RRK 4.1</a>
+    <a href="rrk-4-2-en.html">RRK 4.2</a>
+    <a href="rrk-4-3-en.html">RRK 4.3</a>
+    <a href="rrk-4-4-en.html">RRK 4.4</a>
+    <a href="rrk-5-0-en.html">RRK 5.0</a>
+    <a href="../rrk-evolution.html">RRK‑Evolution</a>
+  </nav>
+</header>
+
+<main>
+  <h1>RRK 2.1 – Drift & Stabilization</h1>
+  <p><em>How recursive systems change without falling apart</em></p>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 2.1 describes how recursive systems remain stable despite constant
+      change. Drift arises from minimal deviations in recursion, while
+      stabilization emerges from internal corrective mechanisms.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>1. Drift</h2>
+    <p>
+      Drift refers to the systematic shift of the system state through
+      repeated recursion:
+    </p>
+
+    <p>
+      
+
+\[
+        S_{t+1} = R(S_t) + \epsilon_t
+      \]
+
+
+    </p>
+
+    <p>
+      Small errors \( \epsilon_t \) accumulate and produce long‑term change.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>2. Stabilization</h2>
+    <p>
+      Systems stabilize themselves through internal counterforces:
+    </p>
+
+    <p>
+      
+
+\[
+        S_{t+1} = R(S_t) - K(S_t - S^\*)
+      \]
+
+
+    </p>
+
+    <p>
+      Here, \( S^\* \) is an attractor or target state.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>3. Drift–Stability Balance</h2>
+    <p>
+      Systems remain functional when drift and stabilization are in balance.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>4. Transition to RRK 2.2</h2>
+    <p>
+      RRK 2.2 investigates how attractors emerge and how systems diverge.
+    </p>
+    <p><a href="rrk-2-2-en.html">Continue to RRK 2.2</a></p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Back to overview</a></p>
+  </div>
+</main>
+</body>
+</html>

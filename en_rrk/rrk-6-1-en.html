@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RRK 6.1 – Axiomatic Framework of Recursive Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0-en.html">RRK 2.0</a>
+    <a href="rrk-2-1-en.html">RRK 2.1</a>
+    <a href="rrk-2-2-en.html">RRK 2.2</a>
+    <a href="rrk-3-0-en.html">RRK 3.0</a>
+    <a href="rrk-4-0-en.html">RRK 4.0</a>
+    <a href="rrk-4-1-en.html">RRK 4.1</a>
+    <a href="rrk-4-2-en.html">RRK 4.2</a>
+    <a href="rrk-4-3-en.html">RRK 4.3</a>
+    <a href="rrk-4-4-en.html">RRK 4.4</a>
+    <a href="rrk-5-0-en.html">RRK 5.0</a>
+    <a href="rrk-6-1-en.html" class="active">RRK 6.1</a>
+    <a href="../rrk-evolution.html">RRK‑Evolution</a>
+  </nav>
+</header>
+
+<main>
+  <h1>RRK 6.1 – Axiomatic Framework of Recursive Systems</h1>
+  <p><em>The fully formal version of the RRK framework</em></p>
+
+  <section class="section-box">
+    <h2>Executive Summary</h2>
+    <p>
+      RRK 6.1 is the first fully axiomatic version of the RRK framework. 
+      While RRK 4.4 describes political transformation structurally and RRK 5.0 
+      identifies the universal meta‑structures of recursive systems, 
+      RRK 6.1 formalizes these insights into a compact system of axioms. 
+      Recursive systems are described as combinations of state spaces, 
+      transformation operators, distance measures, recursion relations, 
+      and coherence/decoherence mechanisms. 
+      RRK 6.1 is therefore no longer a model of a specific system, 
+      but a general, domain‑independent structural framework for recursion.
+    </p>
+  </section>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 6.1 defines recursive systems through a set of axioms that formally 
+      capture states, transformations, recursion relations, coherence, 
+      decoherence, and attractor structures. 
+      Building on RRK 4.4 (political transformation) and RRK 5.0 
+      (meta‑structures of recursive systems), RRK 6.1 describes how recursive 
+      dynamics can be modeled as formal systems independent of domain. 
+      The framework is constructed to represent both concrete applications 
+      (e.g., political, technological, biological systems) and meta‑analyses 
+      of recursive theory development.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>1. Position within the RRK Framework</h2>
+    <p>
+      RRK 6.1 stands at the end of a recursive theory‑development process:
+    </p>
+
+    <p>
+      2.0 → 3.0 → 4.0 → 4.4 → 5.0 → 6.0 → <strong>6.1</strong>
+    </p>
+
+    <p>
+      RRK 4.4 describes political transformation as a recursive structural model.  
+      RRK 5.0 abstracts this structure into universal meta‑properties 
+      of recursive systems.  
+      RRK 6.1 consolidates these insights into an axiomatic system that makes 
+      recursive systems formally describable independent of domain or content.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>2. Basic Structure of Recursive Systems in RRK 6.1</h2>
+    <p>
+      RRK 6.1 describes a recursive system as the tuple
+    </p>
+
+    <p>
+      
+
+\[
+        \mathcal{R} = (Z, F, d, \varepsilon_r, R^\*, C_r, D_r, \rho, \sim)
+      \]
+
+
+    </p>
+
+    <p>
+      with the following components:
+    </p>
+
+    <ul>
+      <li><strong>\(Z\):</strong> state space of the system.</li>
+      <li><strong>\(F\):</strong> set of transformation operators \(f : Z \to Z\).</li>
+      <li><strong>\(d\):</strong> distance or divergence measure on \(Z\).</li>
+      <li><strong>\(\varepsilon_r\):</strong> recursion threshold (tolerance for structural change).</li>
+      <li><strong>\(R^\*\):</strong> recursion relation (recursive generation of state sequences).</li>
+      <li><strong>\(C_r\):</strong> coherence relation (structure preservation).</li>
+      <li><strong>\(D_r\):</strong> decoherence relation (structural dissolution).</li>
+      <li><strong>\(\rho\):</strong> attractor or stability operator.</li>
+      <li><strong>\(\sim\):</strong> equivalence or similarity relation on states or structures.</li>
+    </ul>
+  </section>
+
+  <section class="section-box">
+    <h2>3. Axiom System of RRK 6.1</h2>
+    <p>
+      RRK 6.1 defines recursive systems not through content, 
+      but through axioms that determine the structure of their dynamics.
+    </p>
+
+    <h3>3.1 Recursion Axiom</h3>
+    <p>
+      There exists a recursion relation \(R^\*\) such that for at least one 
+      initial state \(z_0 \in Z\) a sequence \((z_n)\) is defined with
+    </p>
+
+    <p>
+      
+
+\[
+        z_{n+1} = f_n(z_n), \quad f_n \in F
+      \]
+
+
+    </p>
+
+    <p>
+      and \(R^\*(z_0, z_n)\) holds for all \(n\).
+    </p>
+
+    <h3>3.2 Threshold Axiom</h3>
+    <p>
+      There exists a recursion threshold \(\varepsilon_r > 0\) such that 
+      structural transformations count as phase transitions when
+    </p>
+
+    <p>
+      
+
+\[
+        d(z_n, z_{n+1}) \ge \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      and these exceedances are not compensated by short‑term return 
+      to an equivalent state.
+    </p>
+
+    <h3>3.3 Coherence Axiom</h3>
+    <p>
+      A coherence relation \(C_r\) is defined such that for a sequence \((z_n)\):
+    </p>
+
+    <p>
+      
+
+\[
+        C_r(z_n, z_{n+1}) \Rightarrow d(z_n, z_{n+1}) < \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      Coherence means: recursion changes the state without leaving 
+      the structural class.
+    </p>
+
+    <h3>3.4 Decoherence Axiom</h3>
+    <p>
+      A decoherence relation \(D_r\) is defined such that:
+    </p>
+
+    <p>
+      
+
+\[
+        D_r(z_n, z_{n+1}) \Rightarrow d(z_n, z_{n+1}) \ge \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      Decoherence means: recursion leads to structural reorganization 
+      and potentially to new attractors.
+    </p>
+
+    <h3>3.5 Attractor Axiom</h3>
+    <p>
+      There exists an operator \(\rho\) that defines an attractor \(\rho(S)\) 
+      for suitable subsets \(S \subseteq Z\), such that for sufficiently large \(n\):
+    </p>
+
+    <p>
+      
+
+\[
+        z_n \in \rho(S) \quad \text{or} \quad d(z_n, \rho(S)) < \varepsilon_r.
+      \]
+
+
+    </p>
+
+    <h3>3.6 Equivalence Axiom</h3>
+    <p>
+      A relation \(\sim\) is defined that describes structural equivalence 
+      or functional similarity between states or attractor structures. 
+      It is at least reflexive and symmetric, 
+      and in many applications also transitive.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>4. Connection to RRK 4.4 and RRK 5.0</h2>
+    <p>
+      RRK 6.1 is not detached from earlier versions, 
+      but formalizes them:
+    </p>
+
+    <ul>
+      <li>
+        RRK 4.4 can be interpreted as a special case of \(\mathcal{R}\), 
+        where \(Z\) represents political system states, \(F\) political 
+        transformation mechanisms, and \(\varepsilon_r\) political thresholds.
+      </li>
+      <li>
+        RRK 5.0 describes hyper‑recursion, meta‑thresholds, and meta‑feedbacks; 
+        RRK 6.1 provides the formal level on which such meta‑structures 
+        can be modeled as operations on \(\mathcal{R}\) itself.
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-box">
+    <h2>5. Application Framework</h2>
+    <p>
+      RRK 6.1 is domain‑neutral. 
+      It can be applied to political, technological, biological, 
+      economic, or epistemic systems, 
+      as long as they can be modeled as recursive systems with states, 
+      transformations, and thresholds.
+    </p>
+
+    <p>
+      The concrete interpretation of 
+      \(Z, F, d, \varepsilon_r, R^\*, C_r, D_r, \rho, \sim\) 
+      depends on the application, 
+      but the structural logic remains invariant.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>6. RRK as a Recursive Scientific Artifact</h2>
+    <p>
+      RRK 6.1 closes the recursive loop of its own theory‑genesis: 
+      the framework not only describes recursive systems, 
+      but can itself be reconstructed as a recursive system 
+      with versioning, variation, selection, and retention. 
+      The axiomatization in 6.1 makes this meta‑character explicit.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>7. Versioning and Development</h2>
+    <p>RRK has a documented version history:</p>
+
+    <p>
+      2.0 → 3.0 → 4.0 → 4.4 → 5.0 → 6.0 → <strong>6.1</strong>
+    </p>
+
+    <p>
+      RRK 6.1 is the first fully axiomatic version of the model. 
+      It consolidates the structural and meta‑structural insights 
+      of previous versions into a compact, universally applicable 
+      framework of recursive systems.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>8. Conclusion</h2>
+    <p>
+      RRK 6.1 marks the transition from a recursive theory framework 
+      to a formal axiomatic system of recursive systems. 
+      It connects the politically motivated structural perspective of RRK 4.4 
+      with the meta‑level of RRK 5.0 and transforms both into a 
+      domain‑independent, precisely defined structure. 
+      RRK thus becomes a general tool for formally analyzing recursion, 
+      thresholds, coherence, decoherence, and attractor formation 
+      in complex systems.
+    </p>
+
+    <p>
+      <a href="../index.html">Back to overview</a>
+    </p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Back to overview</a></p>
+  </div>
+
+</main>
+</body>
+</html>
