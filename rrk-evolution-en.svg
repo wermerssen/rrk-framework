@@ -1,7 +1,7 @@
-<svg width="1800" height="1300" viewBox="0 0 1800 1300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1800" height="1250" viewBox="0 0 1800 1250" xmlns="http://www.w3.org/2000/svg">
 
   <!-- Background -->
-  <rect width="1800" height="1300" fill="white"/>
+  <rect width="1800" height="1250" fill="white"/>
 
   <!-- Title -->
   <text x="900" y="90" font-family="Arial" font-size="48" font-weight="bold" text-anchor="middle">
@@ -12,7 +12,7 @@
   </text>
 
   <!-- Outer ring: RRK 6.1+ -->
-  <circle cx="900" cy="650" r="430" fill="none" stroke="#6A5ACD" stroke-width="22"/>
+  <circle cx="900" cy="600" r="430" fill="none" stroke="#6A5ACD" stroke-width="22"/>
   <text x="900" y="200" font-family="Arial" font-size="24" fill="#6A5ACD" text-anchor="middle">
     RRK 6.1+ – Validation & Formalization
   </text>
@@ -21,7 +21,7 @@
   </text>
 
   <!-- Meta-level ring -->
-  <circle cx="900" cy="650" r="330" fill="none" stroke="#8A2BE2" stroke-width="22"/>
+  <circle cx="900" cy="600" r="330" fill="none" stroke="#8A2BE2" stroke-width="22"/>
   <text x="900" y="300" font-family="Arial" font-size="24" fill="#8A2BE2" text-anchor="middle">
     RRK 5.0 – Meta-level & Recursion
   </text>
@@ -31,128 +31,128 @@
 
   <!-- Inner cycle segments -->
   <!-- RRK 2.x -->
-  <path d="M900 650 L900 350 A300 300 0 0 1 1130 420 Z" fill="#4A90E2"/>
-  <text x="1020" y="400" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
+  <path d="M900 600 L900 300 A300 300 0 0 1 1130 370 Z" fill="#4A90E2"/>
+  <text x="1020" y="350" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
     RRK 2.x
   </text>
-  <text x="1020" y="430" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+  <text x="1020" y="380" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
     Foundation & Initialization
   </text>
 
   <!-- RRK 3.0 -->
-  <path d="M900 650 L1130 420 A300 300 0 0 1 1200 650 Z" fill="#50C878"/>
-  <text x="1180" y="550" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
+  <path d="M900 600 L1130 370 A300 300 0 0 1 1200 600 Z" fill="#50C878"/>
+  <text x="1180" y="500" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
     RRK 3.0
   </text>
-  <text x="1180" y="580" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+  <text x="1180" y="530" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
     Structuring & Expansion
   </text>
 
   <!-- RRK 4.0–4.3 -->
-  <path d="M900 650 L1200 650 A300 300 0 0 1 1130 880 Z" fill="#F5C542"/>
-  <text x="1180" y="750" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
+  <path d="M900 600 L1200 600 A300 300 0 0 1 1130 830 Z" fill="#F5C542"/>
+  <text x="1180" y="700" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
     RRK 4.0–4.3
   </text>
-  <text x="1180" y="780" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+  <text x="1180" y="730" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
     Integration & Systematization
   </text>
 
   <!-- RRK 4.4 -->
-  <path d="M900 650 L1130 880 A300 300 0 0 1 900 950 Z" fill="#F39C12"/>
-  <text x="1020" y="900" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
+  <path d="M900 600 L1130 830 A300 300 0 0 1 900 900 Z" fill="#F39C12"/>
+  <text x="1020" y="850" font-family="Arial" font-size="22" fill="white" text-anchor="middle">
     RRK 4.4
   </text>
-  <text x="1020" y="930" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+  <text x="1020" y="880" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
     Optimization & Stabilization
   </text>
 
   <!-- Center -->
-  <circle cx="900" cy="650" r="140" fill="#333"/>
-  <text x="900" y="640" font-family="Arial" font-size="26" fill="white" text-anchor="middle">
+  <circle cx="900" cy="600" r="140" fill="#333"/>
+  <text x="900" y="590" font-family="Arial" font-size="26" fill="white" text-anchor="middle">
     RRK CORE
   </text>
-  <text x="900" y="675" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
+  <text x="900" y="625" font-family="Arial" font-size="18" fill="white" text-anchor="middle">
     Recursive evolution of the core system
   </text>
 
   <!-- Left column: Evolution Principle -->
-  <text x="200" y="300" font-family="Arial" font-size="28" font-weight="bold">
+  <text x="200" y="260" font-family="Arial" font-size="28" font-weight="bold">
     Evolution Principle
   </text>
-  <text x="200" y="340" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="300" font-family="Arial" font-size="20" fill="#444">
     RRK evolves continuously in a recursive cycle.
   </text>
-  <text x="200" y="370" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="330" font-family="Arial" font-size="20" fill="#444">
     The meta-level (RRK 5.0) observes, reflects, and integrates insights.
   </text>
-  <text x="200" y="400" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="360" font-family="Arial" font-size="20" fill="#444">
     RRK 6.1+ extends this through validation and formalization.
   </text>
 
   <!-- Left column: Core Ideas -->
-  <text x="200" y="500" font-family="Arial" font-size="28" font-weight="bold">
+  <text x="200" y="450" font-family="Arial" font-size="28" font-weight="bold">
     Core Ideas
   </text>
-  <text x="200" y="540" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="490" font-family="Arial" font-size="20" fill="#444">
     • Recursive evolution instead of linear development
   </text>
-  <text x="200" y="570" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="520" font-family="Arial" font-size="20" fill="#444">
     • Self-observation and integration at the meta-level
   </text>
-  <text x="200" y="600" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="550" font-family="Arial" font-size="20" fill="#444">
     • Continuous improvement through feedback loops
   </text>
-  <text x="200" y="630" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="580" font-family="Arial" font-size="20" fill="#444">
     • Scalability, adaptability, and resilience
   </text>
-  <text x="200" y="660" font-family="Arial" font-size="20" fill="#444">
+  <text x="200" y="610" font-family="Arial" font-size="20" fill="#444">
     • Empirical validation and predictive capability (RRK 6.1+)
   </text>
 
   <!-- Right column: Version Transitions -->
-  <text x="1600" y="300" font-family="Arial" font-size="28" font-weight="bold" text-anchor="end">
+  <text x="1600" y="260" font-family="Arial" font-size="28" font-weight="bold" text-anchor="end">
     Version Transitions
   </text>
-  <text x="1600" y="340" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="300" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     2.x → 3.0: Consolidation of foundations
   </text>
-  <text x="1600" y="370" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="330" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     3.0 → 4.0: Expansion & system integration
   </text>
-  <text x="1600" y="400" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="360" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     4.0–4.3 → 4.4: Optimization & resilience
   </text>
-  <text x="1600" y="430" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="390" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     4.4 → 2.x: Recursive renewal of the foundation
   </text>
-  <text x="1600" y="460" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="420" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     Meta → Core: Feedback & principles
   </text>
-  <text x="1600" y="490" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
+  <text x="1600" y="450" font-family="Arial" font-size="20" fill="#444" text-anchor="end">
     Validation → Meta: Operational insights
   </text>
 
-  <!-- Timeline -->
-  <text x="900" y="1080" font-family="Arial" font-size="28" font-weight="bold" text-anchor="middle">
+  <!-- Timeline (compact A1) -->
+  <text x="900" y="1020" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle">
     Timeline of RRK Evolution (example)
   </text>
 
-  <text x="900" y="1120" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1060" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 1 – Foundation (RRK 2.x) • 2016–2017
   </text>
-  <text x="900" y="1150" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1090" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 2 – Structuring (RRK 3.0) • 2018–2020
   </text>
-  <text x="900" y="1180" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1120" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 3 – Integration (RRK 4.0–4.3) • 2021–2023
   </text>
-  <text x="900" y="1210" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1150" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 4 – Optimization (RRK 4.4) • 2024–2025
   </text>
-  <text x="900" y="1240" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1180" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 5 – Meta-level (RRK 5.0) • from 2025+
   </text>
-  <text x="900" y="1270" font-family="Arial" font-size="20" text-anchor="middle" fill="#444">
+  <text x="900" y="1210" font-family="Arial" font-size="18" text-anchor="middle" fill="#444">
     Phase 6 – Validation (RRK 6.1+) • from 2026+
   </text>
 
