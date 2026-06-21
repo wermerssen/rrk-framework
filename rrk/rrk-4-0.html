@@ -9,8 +9,12 @@
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
-        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\
+
+\[', '\\]
+
+']]
       }
     };
   </script>
@@ -20,22 +24,20 @@
 <body>
 <header>
   <nav class="nav">
-  <img src="../rrk-logo.svg" alt="RRK Logo">
-  <a href="../index.html">Home</a>
-  <a href="rrk-2-0.html">RRK 2.0</a>
-  <a href="rrk-2-1.html">RRK 2.1</a>
-  <a href="rrk-2-2.html">RRK 2.2</a>
-  <a href="rrk-3-0.html">RRK 3.0</a>
-  <a href="rrk-4-0.html" class="active">RRK 4.0</a>
-  <a href="rrk-4-1.html">RRK 4.1</a>
-  <a href="rrk-4-2.html">RRK 4.2</a>
-  <a href="rrk-4-3.html">RRK 4.3</a>
-  <a href="rrk-4-4.html">RRK 4.4</a>
-  <a href="rrk-5-0.html">RRK 5.0</a>
-  <a href="../rrk-evolution.html">RRK‑Evolution</a>
-</nav>
-
-
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0.html">RRK 2.0</a>
+    <a href="rrk-2-1.html">RRK 2.1</a>
+    <a href="rrk-2-2.html">RRK 2.2</a>
+    <a href="rrk-3-0.html">RRK 3.0</a>
+    <a href="rrk-4-0.html" class="active">RRK 4.0</a>
+    <a href="rrk-4-1.html">RRK 4.1</a>
+    <a href="rrk-4-2.html">RRK 4.2</a>
+    <a href="rrk-4-3.html">RRK 4.3</a>
+    <a href="rrk-4-4.html">RRK 4.4</a>
+    <a href="rrk-5-0.html">RRK 5.0</a>
+    <a href="../rrk-evolution-de.html">RRK‑Evolution</a>
+  </nav>
 </header>
 
 <main>
@@ -56,11 +58,14 @@
     <p>
       Ein Ensemble besteht aus vielen rekursiven Systemen:
     </p>
+
     <p>
+      
 
 \[ \{ S^{(1)}, S^{(2)}, \dots, S^{(n)} \} \]
 
-</p>
+
+    </p>
   </section>
 
   <section class="section-box">
@@ -68,11 +73,14 @@
     <p>
       Systeme beeinflussen sich gegenseitig:
     </p>
+
     <p>
+      
 
 \[ S^{(i)}_{t+1} = R(S^{(i)}_t) + C(S^{(j)}_t) \]
 
-</p>
+
+    </p>
   </section>
 
   <section class="section-box">
