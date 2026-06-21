@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+
+  <!-- Background -->
+  <rect width="1200" height="850" fill="#ffffff"/>
+
+  <!-- Embedded PNG: new English version -->
+  <image href="rrk-evolution-en.png"
+         x="0" y="0"
+         width="1200"
+         height="850"
+         preserveAspectRatio="xMidYMid meet" />
+
+  <!-- Title text -->
+  <text x="600" y="830" text-anchor="middle"
+        font-family="Arial" font-size="16" fill="#5a2ca0">
+    RRK Evolution – Meta‑recursive Development of the System Architecture (Version 6.1+)
+  </text>
+
+</svg>
