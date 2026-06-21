@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>RRK 6.1 – Axiomenbasiertes Framework rekursiver Systeme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <!-- MathJax nur als Loader -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+
+<body>
+<header>
+  <nav class="nav">
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0.html">RRK 2.0</a>
+    <a href="rrk-2-1.html">RRK 2.1</a>
+    <a href="rrk-2-2.html">RRK 2.2</a>
+    <a href="rrk-3-0.html">RRK 3.0</a>
+    <a href="rrk-4-0.html">RRK 4.0</a>
+    <a href="rrk-4-1.html">RRK 4.1</a>
+    <a href="rrk-4-2.html">RRK 4.2</a>
+    <a href="rrk-4-3.html">RRK 4.3</a>
+    <a href="rrk-4-4.html">RRK 4.4</a>
+    <a href="rrk-5-0.html">RRK 5.0</a>
+    <a href="rrk-6-1.html" class="active">RRK 6.1</a>
+    <a href="../rrk-evolution.html">RRK‑Evolution</a>
+  </nav>
+</header>
+
+<main>
+  <h1>RRK 6.1 – Axiomenbasiertes Framework rekursiver Systeme</h1>
+  <p><em>Die formal vollständige Version des RRK‑Frameworks</em></p>
+
+  <section class="section-box">
+    <h2>Executive Summary</h2>
+    <p>
+      RRK 6.1 ist die erste vollständig axiomenbasierte Version des RRK‑Frameworks. 
+      Während RRK 4.4 politische Transformation strukturell beschreibt und RRK 5.0 
+      die universellen Meta‑Strukturen rekursiver Systeme identifiziert, 
+      formalisiert RRK 6.1 diese Einsichten in ein kompaktes Axiomensystem. 
+      Rekursive Systeme werden als Kombination aus Zustandsraum, 
+      Transformationsoperatoren, Distanzmaßen, Rekursionsrelationen und 
+      Kohärenz‑/Dekohärenz‑Mechanismen beschrieben. 
+      RRK 6.1 ist damit kein Modell eines bestimmten Systems mehr, 
+      sondern ein allgemeines, domänenunabhängiges Struktur‑Framework 
+      für Rekursion.
+    </p>
+  </section>
+
+  <section class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      RRK 6.1 definiert rekursive Systeme durch ein Axiomenset, das Zustände, 
+      Transformationen, Rekursionsrelationen, Kohärenz, Dekohärenz und 
+      Attraktorstrukturen formal erfasst. 
+      Aufbauend auf RRK 4.4 (politische Transformation) und RRK 5.0 
+      (Meta‑Strukturen rekursiver Systeme) beschreibt RRK 6.1, 
+      wie rekursive Dynamiken unabhängig vom Anwendungsbereich 
+      als formale Systeme modelliert werden können. 
+      Das Framework ist so konstruiert, dass es sowohl konkrete 
+      Anwendungen (z. B. politische, technologische, biologische Systeme) 
+      als auch Meta‑Analysen rekursiver Theorieentwicklung abbilden kann.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>1. Einordnung im RRK‑Framework</h2>
+    <p>
+      RRK 6.1 steht am Ende einer rekursiven Theorieentwicklung:
+    </p>
+
+    <p>
+      2.0 → 3.0 → 4.0 → 4.4 → 5.0 → 6.0 → <strong>6.1</strong>
+    </p>
+
+    <p>
+      RRK 4.4 beschreibt politische Transformation als rekursives Strukturmodell.  
+      RRK 5.0 abstrahiert diese Struktur zu universellen Meta‑Eigenschaften 
+      rekursiver Systeme.  
+      RRK 6.1 fasst diese Einsichten in ein Axiomensystem, das rekursive Systeme 
+      unabhängig von Domäne oder Inhalt formal beschreibbar macht.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>2. Grundstruktur rekursiver Systeme in RRK 6.1</h2>
+    <p>
+      RRK 6.1 beschreibt ein rekursives System als Tupel
+    </p>
+
+    <p>
+      
+
+\[
+        \mathcal{R} = (Z, F, d, \varepsilon_r, R^\*, C_r, D_r, \rho, \sim)
+      \]
+
+
+    </p>
+
+    <p>
+      mit den folgenden Komponenten:
+    </p>
+
+    <ul>
+      <li><strong>\(Z\):</strong> Zustandsraum des Systems.</li>
+      <li><strong>\(F\):</strong> Menge von Transformationsoperatoren \(f : Z \to Z\).</li>
+      <li><strong>\(d\):</strong> Distanz- oder Divergenzmaß auf \(Z\).</li>
+      <li><strong>\(\varepsilon_r\):</strong> Rekursionsschwelle (Toleranz für strukturelle Veränderung).</li>
+      <li><strong>\(R^\*\):</strong> Rekursionsrelation (rekursive Erzeugung von Zustandsfolgen).</li>
+      <li><strong>\(C_r\):</strong> Kohärenzrelation (Struktur‑Erhalt).</li>
+      <li><strong>\(D_r\):</strong> Dekohärenzrelation (Struktur‑Auflösung).</li>
+      <li><strong>\(\rho\):</strong> Attraktor‑ oder Stabilitätsoperator.</li>
+      <li><strong>\(\sim\):</strong> Äquivalenz‑ oder Ähnlichkeitsrelation auf Zuständen oder Strukturen.</li>
+    </ul>
+  </section>
+
+  <section class="section-box">
+    <h2>3. Axiomensystem von RRK 6.1</h2>
+    <p>
+      RRK 6.1 definiert rekursive Systeme nicht über Inhalte, 
+      sondern über Axiome, die die Struktur ihrer Dynamik festlegen.
+    </p>
+
+    <h3>3.1 Rekursionsaxiom</h3>
+    <p>
+      Es existiert eine Rekursionsrelation \(R^\*\), sodass für mindestens einen 
+      Startzustand \(z_0 \in Z\) eine Folge \((z_n)\) mit
+    </p>
+
+    <p>
+      
+
+\[
+        z_{n+1} = f_n(z_n), \quad f_n \in F
+      \]
+
+
+    </p>
+
+    <p>
+      definiert ist und \(R^\*(z_0, z_n)\) für alle \(n\) gilt.
+    </p>
+
+    <h3>3.2 Schwellenaxiom</h3>
+    <p>
+      Es existiert eine Rekursionsschwelle \(\varepsilon_r > 0\), 
+      sodass strukturelle Transformationen dann als Phasenwechsel gelten, 
+      wenn
+    </p>
+
+    <p>
+      
+
+\[
+        d(z_n, z_{n+1}) \ge \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      und diese Überschreitungen nicht durch kurzfristige Rückkehr 
+      in einen äquivalenten Zustand kompensiert werden.
+    </p>
+
+    <h3>3.3 Kohärenzaxiom</h3>
+    <p>
+      Eine Kohärenzrelation \(C_r\) ist definiert, sodass für eine Folge 
+      \((z_n)\) gilt:
+    </p>
+
+    <p>
+      
+
+\[
+        C_r(z_n, z_{n+1}) \Rightarrow d(z_n, z_{n+1}) < \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      Kohärenz bedeutet: Rekursion verändert den Zustand, 
+      ohne die Strukturklasse zu verlassen.
+    </p>
+
+    <h3>3.4 Dekohärenzaxiom</h3>
+    <p>
+      Eine Dekohärenzrelation \(D_r\) ist definiert, sodass:
+    </p>
+
+    <p>
+      
+
+\[
+        D_r(z_n, z_{n+1}) \Rightarrow d(z_n, z_{n+1}) \ge \varepsilon_r
+      \]
+
+
+    </p>
+
+    <p>
+      Dekohärenz bedeutet: Rekursion führt zu struktureller Neuordnung 
+      und potenziell zu neuen Attraktoren.
+    </p>
+
+    <h3>3.5 Attraktoraxiom</h3>
+    <p>
+      Es existiert ein Operator \(\rho\), der für geeignete Teilmengen 
+      \(S \subseteq Z\) einen Attraktor \(\rho(S)\) definiert, 
+      sodass für alle hinreichend großen \(n\):
+    </p>
+
+    <p>
+      
+
+\[
+        z_n \in \rho(S) \quad \text{oder} \quad d(z_n, \rho(S)) < \varepsilon_r.
+      \]
+
+
+    </p>
+
+    <h3>3.6 Äquivalenzaxiom</h3>
+    <p>
+      Eine Relation \(\sim\) ist definiert, die strukturelle Äquivalenz 
+      oder funktionale Ähnlichkeit zwischen Zuständen oder 
+      Attraktorstrukturen beschreibt. 
+      Sie ist mindestens reflexiv und symmetrisch, 
+      in vielen Anwendungen auch transitiv.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>4. Verbindung zu RRK 4.4 und RRK 5.0</h2>
+    <p>
+      RRK 6.1 ist nicht losgelöst von den früheren Versionen, 
+      sondern formalisiert sie:
+    </p>
+
+    <ul>
+      <li>
+        RRK 4.4 kann als spezieller Fall von \(\mathcal{R}\) interpretiert werden, 
+        in dem \(Z\) politische Systemzustände, \(F\) politische 
+        Transformationsmechanismen und \(\varepsilon_r\) 
+        politische Schwellen repräsentiert.
+      </li>
+      <li>
+        RRK 5.0 beschreibt Hyper‑Rekursion, Meta‑Schwellen und Meta‑Rückkopplungen; 
+        RRK 6.1 stellt die formale Ebene bereit, auf der solche Meta‑Strukturen 
+        als Operationen auf \(\mathcal{R}\) selbst modelliert werden können.
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-box">
+    <h2>5. Anwendungsrahmen</h2>
+    <p>
+      RRK 6.1 ist domänenneutral. 
+      Es kann auf politische, technologische, biologische, 
+      ökonomische oder epistemische Systeme angewendet werden, 
+      sofern diese als rekursive Systeme mit Zuständen, 
+      Transformationen und Schwellen modellierbar sind.
+    </p>
+
+    <p>
+      Die konkrete Interpretation von \(Z, F, d, \varepsilon_r, R^\*, C_r, D_r, \rho, \sim\) 
+      ist anwendungsabhängig, die strukturelle Logik bleibt invariant.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>6. RRK als rekursives wissenschaftliches Artefakt</h2>
+    <p>
+      RRK 6.1 schließt den rekursiven Bogen der eigenen Theoriegenese: 
+      Das Framework beschreibt nicht nur rekursive Systeme, 
+      sondern ist selbst als rekursives System mit Versionierung, 
+      Variation, Selektion und Retention rekonstruierbar. 
+      Die Axiomatisierung in 6.1 macht diesen Meta‑Charakter explizit.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>7. Versionierung und Entwicklung</h2>
+    <p>RRK besitzt eine dokumentierte Versionsgeschichte:</p>
+
+    <p>
+      2.0 → 3.0 → 4.0 → 4.4 → 5.0 → 6.0 → <strong>6.1</strong>
+    </p>
+
+    <p>
+      RRK 6.1 ist die erste vollständig axiomenbasierte Version des Modells. 
+      Sie fasst die strukturellen und meta‑strukturellen Einsichten 
+      der vorherigen Versionen in ein kompaktes, universell anwendbares 
+      Framework rekursiver Systeme.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>8. Schluss</h2>
+    <p>
+      RRK 6.1 markiert den Übergang von einem rekursiven Theorie‑Framework 
+      zu einem formalisierten Axiomensystem rekursiver Systeme. 
+      Es verbindet die politisch motivierte Strukturperspektive von RRK 4.4 
+      mit der Meta‑Ebene von RRK 5.0 und überführt beide in eine 
+      domänenunabhängige, präzise definierte Struktur. 
+      Damit wird RRK zu einem allgemeinen Werkzeug, 
+      um Rekursion, Schwellen, Kohärenz, Dekohärenz und Attraktorbildung 
+      in komplexen Systemen formal zu analysieren.
+    </p>
+
+    <p>
+      <a href="../index.html">Zurück zur Übersicht</a>
+    </p>
+  </section>
+
+  <div class="footer-nav">
+    <p><a href="../index.html">Zur Übersicht</a></p>
+  </div>
+
+</main>
+</body>
+</html>
