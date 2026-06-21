@@ -9,8 +9,12 @@
   <script>
     window.MathJax = {
       tex: {
-        inlineMath: [['\u005C\u005C(', '\u005C\u005C)']],
-        displayMath: [['\u005C\u005C[', '\u005C\u005C]']]
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\
+
+\[', '\\]
+
+']]
       }
     };
   </script>
@@ -21,21 +25,20 @@
 
 <header>
   <nav class="nav">
-  <img src="../rrk-logo.svg" alt="RRK Logo">
-  <a href="../index.html">Home</a>
-  <a href="rrk-2-0.html" class="active">RRK 2.0</a>
-  <a href="rrk-2-1.html">RRK 2.1</a>
-  <a href="rrk-2-2.html">RRK 2.2</a>
-  <a href="rrk-3-0.html">RRK 3.0</a>
-  <a href="rrk-4-0.html">RRK 4.0</a>
-  <a href="rrk-4-1.html">RRK 4.1</a>
-  <a href="rrk-4-2.html">RRK 4.2</a>
-  <a href="rrk-4-3.html">RRK 4.3</a>
-  <a href="rrk-4-4.html">RRK 4.4</a>
-  <a href="rrk-5-0.html">RRK 5.0</a>
-  <a href="../rrk-evolution.html">RRK‑Evolution</a>
-</nav>
-
+    <img src="../rrk-logo.svg" alt="RRK Logo">
+    <a href="../index.html">Home</a>
+    <a href="rrk-2-0.html" class="active">RRK 2.0</a>
+    <a href="rrk-2-1.html">RRK 2.1</a>
+    <a href="rrk-2-2.html">RRK 2.2</a>
+    <a href="rrk-3-0.html">RRK 3.0</a>
+    <a href="rrk-4-0.html">RRK 4.0</a>
+    <a href="rrk-4-1.html">RRK 4.1</a>
+    <a href="rrk-4-2.html">RRK 4.2</a>
+    <a href="rrk-4-3.html">RRK 4.3</a>
+    <a href="rrk-4-4.html">RRK 4.4</a>
+    <a href="rrk-5-0.html">RRK 5.0</a>
+    <a href="../rrk-evolution-de.html">RRK‑Evolution</a>
+  </nav>
 </header>
 
 <main>
@@ -66,22 +69,30 @@
     <p>Ein rekursives System besteht aus:</p>
 
     <p>
+      
 
 \[ S_t \quad \text{(Zustand zur Zeit } t) \]
 
-</p>
+
+    </p>
+
     <p>
+      
 
 \[ R \quad \text{(Rekursionsoperator)} \]
 
-</p>
+
+    </p>
 
     <p>Die Dynamik ist gegeben durch:</p>
+
     <p>
+      
 
 \[ S_{t+1} = R(S_t) \]
 
-</p>
+
+    </p>
   </section>
 
   <section class="section-box">
@@ -90,11 +101,14 @@
     <p><strong>(2) Operator:</strong> \( R: \mathcal{S} \rightarrow \mathcal{S} \)</p>
 
     <p><strong>(3) Rekursionskette:</strong></p>
+
     <p>
+      
 
 \[ S_0 \xrightarrow{R} S_1 \xrightarrow{R} S_2 \xrightarrow{R} \dots \]
 
-</p>
+
+    </p>
 
     <p><strong>(4) Selbstreferenz:</strong> Das System wirkt auf sich selbst.</p>
   </section>
@@ -121,14 +135,4 @@
       Stabilisierung.
     </p>
     <p>
-      Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift & Stabilisierung</a>
-    </p>
-  </section>
-
-  <div class="footer-nav">
-    <p><a href="../index.html">Zur Übersicht</a></p>
-  </div>
-</main>
-
-</body>
-</html>
+      Weiter: <a href="rrk-2-1.html">RRK 2.1 – Drift &
