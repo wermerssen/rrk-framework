@@ -150,11 +150,13 @@ img {
     height: 32px;
   }
 }
+
+
 /* ----------------------------------------------------
    Copyright
 ---------------------------------------------------- */
 
-copyright {
+.copyright {
   display: block;
   text-align: center;
   margin-top: 2rem;
