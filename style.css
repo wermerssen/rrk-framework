@@ -150,3 +150,17 @@ img {
     height: 32px;
   }
 }
+/* ----------------------------------------------------
+   Copyright
+---------------------------------------------------- */
+
+copyright {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666;
+  opacity: 0.85;
+}
