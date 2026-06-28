@@ -166,3 +166,24 @@ img {
   color: #666;
   opacity: 0.85;
 }
+
+
+/* ----------------------------------------------------
+   Archiv-Bereich (neu)
+---------------------------------------------------- */
+
+.archive-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.archive-list {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.archive-list li {
+  margin: 10px 0;
+}
